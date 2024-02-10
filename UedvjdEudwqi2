@@ -1,10 +1,4 @@
-local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-function NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
-
-data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
-
-
- 
+function PLeQGzNcKedbDacsvbIZQIFwZPRysyygd(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
 
 
 
@@ -12,22 +6,22 @@ data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) i
 local player = game.Players.LocalPlayer
 
 -- Создаем локальную переменную для хранения графического интерфейса
-local gui = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('fvUoHLUAUSHBOikNehXTTVuLpWjXDDbJvUCTZGaBsdzqewKgIGnrAENU2NyZWVuR3Vp'), player.PlayerGui)
+local gui = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8715,10395,11970,10605,10605,11550,7455,12285,11025}), player.PlayerGui)
 
 -- Создаем локальную переменную для хранения фрейма меню
-local menu = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('nkmBFnOyptyDupJnJKSqzSMDHBuvbOwBRNWeRwhBoBjChkcfvbrFPHORnJhbWU='), gui)
-menu.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('tLgURZgUUqVwCtwgDweqAIaGQLfaxoQqeCQDfFdAhAQOnDCFSSJxCcTTWVudQ==')
+local menu = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,11970,10185,11445,10605}), gui)
+menu.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8085,10605,11550,12285})
 menu.Size = UDim2.new(0.7, 0, 0.8, 0)
 menu.Position = UDim2.new(0.15, 0, 0.08, 0)
 menu.BackgroundTransparency = 1
 menu.Draggable = true -- Включаем функцию перетаскивания
 
--- После создания объекта NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('hpGxAeqYaYVniFMMDNaTkFmIoJEBdCXGWOaFLnZxYibzbBRIHhWyGqebWVudQ=='), но перед созданием кнопок:
-local backgroundImage = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('dhFhOniCMBjGudrPLKcfQtlIsSJEHQPeREcWHsrIKMXdJRpDYDFAYfrSW1hZ2VMYWJlbA=='))
-backgroundImage.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PkyztGcMQNdLYnEJZSIRpeytnttmUImnKpZkrwsKypqIGpPKmJGGrUaQmFja2dyb3VuZEltYWdl')
+-- После создания объекта PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11445,10605,11550,12285}), но перед созданием кнопок:
+local backgroundImage = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11445,10185,10815,10605,7980,10185,10290,10605,11340}))
+backgroundImage.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,10185,10395,11235,10815,11970,11655,12285,11550,10500,7665,11445,10185,10815,10605})
 backgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Занимает весь фрейм меню
 backgroundImage.Position = UDim2.new(0, 0, 0, 0)
-backgroundImage.Image = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('amOdDqGewpstrKNfTWlguUZhNfUJTyjUVhxvWCigNVGazOByrlEZkRJcmJ4YXNzZXRpZDovLzE2MjE4ODIzMTEz') -- Замените ваш_asset_id на актуальный AssetId изображения
+backgroundImage.Image = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5145,5880,5880,5250,5355,5145,5145,5355}) -- Замените ваш_asset_id на актуальный AssetId изображения
 backgroundImage.ScaleType = Enum.ScaleType.Stretch -- Растягиваем изображение на весь фрейм
 backgroundImage.ZIndex = 1 -- Установите ZIndex меньше, чем у кнопок
 backgroundImage.Parent = menu -- Родительский элемент - это фрейм меню
@@ -37,25 +31,25 @@ menu.BackgroundTransparency = 1
 
 
 -- Создаем локальную переменную для хранения заголовка меню
-local title = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('VtSjuIPwRJAMvolITVbHPajAcdTYmBhdNQQJFnwjcPGTLLAHyasqoxEVGV4dExhYmVs'), menu)
-title.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qQkVLkEwHtieqSDRHZjvwNOyIEIMxQJUsAAAekdxSzASplhSyyeaatBVGl0bGU=')
+local title = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,7980,10185,10290,10605,11340}), menu)
+title.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,11025,12180,11340,10605})
 title.Size = UDim2.new(1, 0, 0.1, 0)
 title.Position = UDim2.new(0, 0, 0, 0)
 title.BackgroundColor3 = Color3.new(0, 0, 0)
 title.BackgroundTransparency = 0.5
-title.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qIQkUGqEHBgqWiyYacYaCdQfGJrUArzUllHJujLuvnZMPgHFVQKtMGq8J+NhSBUb21hdG8gSHViIPCfjYU=')
+title.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({25200,16695,14805,13965,3360,8820,11655,11445,10185,12180,11655,3360,7560,12285,10290,3360,25200,16695,14805,13965})
 title.TextColor3 = Color3.new(1, 1, 1)
 title.TextScaled = true
 title.Font = Enum.Font.SourceSansBold
 
 -- Создаем локальную переменную для хранения кнопки закрытия меню
-local closeButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('esVfUzJaqOvUzargGkGXrdFkbmVjRgmMRdlAPqWirZfPkaPvqFWxaTUVGV4dEJ1dHRvbg=='), menu)
-closeButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('UIOxdkKhTTwpoaxXQMMkXQXXCyLVWjQRouzXzqbIAVlydGNyPhKvuKMQ2xvc2VCdXR0b24=')
+local closeButton = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}), menu)
+closeButton.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,11340,11655,12075,10605,6930,12285,12180,12180,11655,11550})
 closeButton.Size = UDim2.new(0.1, 0, 0.1, 0)
 closeButton.Position = UDim2.new(0.9, 0, 0, 0)
 closeButton.BackgroundColor3 = Color3.new(1, 0, 0)
 closeButton.BackgroundTransparency = 0.5
-closeButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SgjDeRmXrubHiwTXyuXNrBoHAQrmjsIHgyjDdURMMQXdWVKFOokXRLQ0KU=')
+closeButton.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({21840,17325})
 closeButton.TextColor3 = Color3.new(1, 1, 1)
 closeButton.TextScaled = true
 closeButton.Font = Enum.Font.SourceSansBold
@@ -67,25 +61,25 @@ end)
 
 
 -- Создаем локальную переменную для хранения кнопки сворачивания меню
-local minimizeButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('JMXdxsvBDhHcjtDSDrYtidylnUwipXLbmwMXYfaqindQTUFXTNnMqjyVGV4dEJ1dHRvbg=='), menu)
-minimizeButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('AXTszhPnrflAuaTkxerdqIdvibXPFCwClbGppykrwHTYsoiaqwgYobTTWluaW1pemVCdXR0b24=')
+local minimizeButton = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}), menu)
+minimizeButton.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8085,11025,11550,11025,11445,11025,12810,10605,6930,12285,12180,12180,11655,11550})
 minimizeButton.Size = UDim2.new(0.1, 0, 0.1, 0)
 minimizeButton.Position = UDim2.new(0.8, 0, 0, 0) -- Сдвигаем налево относительно кнопки закрытия
 minimizeButton.BackgroundColor3 = Color3.new(0, 0, 1)
 minimizeButton.BackgroundTransparency = 0.5
-minimizeButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('cLeIyNUbiHHDRDyCYbAmMjBImZrKrDOmQDBFizMahcqHuRtWmNUmNdf4oCT')
+minimizeButton.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({23730,13440,15435})
 minimizeButton.TextColor3 = Color3.new(1, 1, 1)
 minimizeButton.TextScaled = true
 minimizeButton.Font = Enum.Font.SourceSansBold
 
 -- Создаем локальную переменную для хранения кнопки разворачивания меню
-local expandButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('TWoKlbRWiHCVpzECOGZNRrxjVIUdwZGQJwtaDFgpwveElEdYoRNQmtlVGV4dEJ1dHRvbg=='), gui)
-expandButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('EZADBrvPmmRkeUqHjqfVhMpzzReWAPYdKKKdNETYjCdRVyDLdIjlfsFRXhwYW5kQnV0dG9u')
+local expandButton = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}), gui)
+expandButton.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7245,12600,11760,10185,11550,10500,6930,12285,12180,12180,11655,11550})
 expandButton.Size = UDim2.new(0.1, 0, 0.1, 0)
 expandButton.Position = UDim2.new(0.1, 0, 0.1, 0) -- Позиция на экране
 expandButton.BackgroundColor3 = Color3.new(0, 0, 0)
 expandButton.BackgroundTransparency = 0.5
-expandButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('YuZUlOhjMQavcuGDzynmuyGyssOYtkiTcCXsbaPAxQGBdaguvshHXqTKw==')
+expandButton.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({4515})
 expandButton.TextColor3 = Color3.new(1, 1, 1)
 expandButton.TextScaled = true
 expandButton.Font = Enum.Font.SourceSansBold
@@ -106,8 +100,8 @@ end)
 -- Предполагаем, что весь предыдущий код остается без изменений
 
 -- Создаем вторую страницу меню
-local secondPage = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('pVZowVBQqXiVYccTREBSGPjWBIwXAOWeYhYKkQXNtvIiGVJOXgOydkNRnJhbWU='), gui)
-secondPage.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('TfBgUNOqrMyLMfICpuzNZiYGYPYlziwgvETFhHyQUvkxXUevBBonuenU2Vjb25kUGFnZQ==')
+local secondPage = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,11970,10185,11445,10605}), gui)
+secondPage.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8715,10605,10395,11655,11550,10500,8400,10185,10815,10605})
 secondPage.Size = UDim2.new(0.7, 0, 0.8, 0)
 secondPage.Position = UDim2.new(0.15, 0, 0.08, 0)
 secondPage.BackgroundTransparency = 1
@@ -118,30 +112,30 @@ local secondPageBackground = backgroundImage:Clone()
 secondPageBackground.Parent = secondPage
 
 -- Создаем кнопку для перехода на вторую страницу
-local nextPageButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('fDtNcubVNakRAMxxfetSedXmoktXJKLflGzZLEHJnxJyhWtdlBbCEzgVGV4dEJ1dHRvbg=='), menu)
-nextPageButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('eXHTVbdplMsqxmgssbPhETWvahgnjjiEZOJblCJFkVIlXymkewidopFTmV4dFBhZ2VCdXR0b24=')
+local nextPageButton = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}), menu)
+nextPageButton.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8190,10605,12600,12180,8400,10185,10815,10605,6930,12285,12180,12180,11655,11550})
 nextPageButton.Size = UDim2.new(0.1, 0, 0.1, 0)
 nextPageButton.Position = UDim2.new(0, 0, 0.9, 0) -- В левом нижнем углу
 nextPageButton.BackgroundColor3 = Color3.new(0, 0, 0)
-nextPageButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('FpwVbshBCKxOOyDhZeAfLQKcGaznkoXTSsRTslaghHhmBUZAXAhznNbPg==')
+nextPageButton.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6510})
 nextPageButton.TextColor3 = Color3.new(1, 1, 1)
 nextPageButton.Font = Enum.Font.SourceSansBold
 nextPageButton.TextScaled = true
 
 -- Создаем маленькое меню для ввода кода
-local codeInputMenu = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('uXyQYyfkrxWYZDNEiSGgabSTiJCFJfpFWBsNbXuRGwEjRqwkniWTNQGRnJhbWU='), gui)
-codeInputMenu.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('sZZfGEqWFoJHgNLUrbNutKgjtQdnZqIfHpIUpgfQYDQrwCbUBRvGhwMQ29kZUlucHV0TWVudQ==')
+local codeInputMenu = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,11970,10185,11445,10605}), gui)
+codeInputMenu.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,11655,10500,10605,7665,11550,11760,12285,12180,8085,10605,11550,12285})
 codeInputMenu.Size = UDim2.new(0.2, 0, 0.2, 0)
 codeInputMenu.Position = UDim2.new(0.4, 0, 0.4, 0)
 codeInputMenu.BackgroundColor3 = Color3.new(0, 0, 0)
 codeInputMenu.Visible = false -- Изначально скрыто
 
 -- closeButton в этом контексте — это кнопка закрытия в меню ввода кода
-local closeButtonCodeMenu = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('gsShSuqMboIgDCcOVSWVWoaTwmLwbtjmMewvMSQtlMgPAXLsWkjLdvvVGV4dEJ1dHRvbg=='), codeInputMenu) -- Убедитесь, что создаете кнопку в правильном родительском элементе
+local closeButtonCodeMenu = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}), codeInputMenu) -- Убедитесь, что создаете кнопку в правильном родительском элементе
 closeButtonCodeMenu.Size = UDim2.new(0.2, 0, 0.2, 0)
 closeButtonCodeMenu.Position = UDim2.new(0.8, 0, 0, 0) -- В правом верхнем углу маленького меню
 closeButtonCodeMenu.BackgroundColor3 = Color3.new(1, 0, 0)
-closeButtonCodeMenu.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('DvWBJKNmjhQgKHXceARLtukcMFXTsGAReMiZoOAtHBYttsXzcuQMHuiWA==')
+closeButtonCodeMenu.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({9240})
 closeButtonCodeMenu.TextColor3 = Color3.new(1, 1, 1)
 closeButtonCodeMenu.Font = Enum.Font.SourceSansBold
 closeButtonCodeMenu.TextScaled = true
@@ -153,11 +147,11 @@ end)
 
 
 -- Поле для ввода кода
-local codeInput = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('nQmdMdgNLstpOgMtMGVlYWLMJgNdvurffyWhPqXsZwyoHrQeuMwsXQCVGV4dEJveA=='), codeInputMenu)
+local codeInput = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,6930,11655,12600}), codeInputMenu)
 codeInput.Size = UDim2.new(0.8, 0, 0.6, 0)
 codeInput.Position = UDim2.new(0.1, 0, 0.2, 0)
 codeInput.BackgroundColor3 = Color3.new(1, 1, 1)
-codeInput.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('JZfQMKmsvnHDhdpajPRqHySorZinkKqSjwHFZIyONnzHEIIPzmgLgza')
+codeInput.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({})
 codeInput.Font = Enum.Font.SourceSans
 codeInput.TextScaled = true
 
@@ -172,21 +166,21 @@ end)
 
 -- Проверка кода и переход на вторую страницу
 codeInput.FocusLost:Connect(function(enterPressed)
-    if enterPressed and codeInput.Text == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('kJMJawBdnlnxyhjmoeoskJNEnzKEhOBoycjvoXdxfdczUFCsCDskHZuMTIz') then
+    if enterPressed and codeInput.Text == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({5145,5250,5355}) then
         menu.Visible = false
         secondPage.Visible = true
         codeInputMenu.Visible = false
     else
-        codeInput.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('xCQOBuXQuvTxGQWDOhEeTScWUthbzsUTVPHtFFXzjjUZBJlpdJzeJCwSU5DT1JSRUNUIENPREU=')
+        codeInput.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,8190,7035,8295,8610,8610,7245,7035,8820,3360,7035,8295,7140,7245})
     end
 end)
 
 -- Создаем объект ImageLabel для фона второй страницы с другим изображением
-local secondPageBackgroundImage = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('fwaDQQCFRjSvQGxDzIGHIJsCOeTsJSgXgclMONZdViMPyjPaoakLTXASW1hZ2VMYWJlbA=='))
-secondPageBackgroundImage.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('FlGvMojiWrtwJkuegjoRgTVuRAOdkhvleCUqeRLBcUaOHYXPoKviyawQmFja2dyb3VuZEltYWdl')
+local secondPageBackgroundImage = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11445,10185,10815,10605,7980,10185,10290,10605,11340}))
+secondPageBackgroundImage.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,10185,10395,11235,10815,11970,11655,12285,11550,10500,7665,11445,10185,10815,10605})
 secondPageBackgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Занимает весь фрейм второй страницы
 secondPageBackgroundImage.Position = UDim2.new(0, 0, 0, 0)
-secondPageBackgroundImage.Image = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('vVPgnaSKsLzAZgjiZKJlWLCZlkzOnoIkBkCDGBiYhpuMGmgaJLMaykDcmJ4YXNzZXRpZDovLzE2MjUyNTU4MTUz') -- Замените на новый AssetId изображения
+secondPageBackgroundImage.Image = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5250,5565,5565,5880,5145,5565,5355}) -- Замените на новый AssetId изображения
 secondPageBackgroundImage.ScaleType = Enum.ScaleType.Stretch -- Растягиваем изображение на весь фрейм
 secondPageBackgroundImage.ZIndex = 1 -- Установите ZIndex меньше, чем у кнопок
 secondPageBackgroundImage.Parent = secondPage -- Родительский элемент - это фрейм второй страницы
@@ -197,12 +191,12 @@ secondPage.BackgroundTransparency = 1
 
 
 -- Кнопка возврата на первую страницу
-local previousPageButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qTOeZMesOURghfuaXZwdGgjfWdlJhDqzUxaWxRZMiRWXoIvbiTXwhABVGV4dEJ1dHRvbg=='), secondPage)
-previousPageButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('mAALSiYqvpqukpbtZCjHtlcoCyMzcdntlrjsCUPNUnJaUIToWpvRLeUUHJldmlvdXNQYWdlQnV0dG9u')
+local previousPageButton = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}), secondPage)
+previousPageButton.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8400,11970,10605,12390,11025,11655,12285,12075,8400,10185,10815,10605,6930,12285,12180,12180,11655,11550})
 previousPageButton.Size = UDim2.new(0.1, 0, 0.1, 0)
 previousPageButton.Position = UDim2.new(0, 0, 0.9, 0) -- В левом нижнем углу
 previousPageButton.BackgroundColor3 = Color3.new(0, 0, 0)
-previousPageButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('kVvwgdOJoVNZnSDaqoSOWSTVmCiXHSJZGZshENBJEVkrExvVxzwKrzkPA==')
+previousPageButton.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6300})
 previousPageButton.TextColor3 = Color3.new(1, 1, 1)
 previousPageButton.Font = Enum.Font.SourceSansBold
 previousPageButton.TextScaled = true
@@ -213,30 +207,30 @@ previousPageButton.MouseButton1Click:Connect(function()
 end)
 
 -- Добавляем объект Sound для воспроизведения музыки
-local music = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('aPvCHPuPYUWkfWazNDaFGsHtvXrbofCpOlkoTqNYTvfWyqAVQPBiWOvU291bmQ='), secondPage)
-music.SoundId = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SdxCMvXwGkBbieyAJhUyhWRkqvqlJHxVPuMKjVDIcGfWDpMPydgvJkGcmJ4YXNzZXRpZDovLzU0MTAwODA4NTc=') -- Замените на ваш айди музыки
-music.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('OxhKngXGQJFvhjSqHzThRqhAztUAdyJSwduIfMIFsPiFjKIoNBQprkzQmFja2dyb3VuZE11c2lj')
+local music = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8715,11655,12285,11550,10500}), secondPage)
+music.SoundId = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5565,5460,5145,5040,5040,5880,5040,5880,5565,5775}) -- Замените на ваш айди музыки
+music.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,10185,10395,11235,10815,11970,11655,12285,11550,10500,8085,12285,12075,11025,10395})
 music.Looped = true -- Музыка будет зациклена
 
 -- Создаем кнопку воспроизведения/остановки музыки на второй странице
-local playButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SABycVnPIyEmYvAgvixNuwADNxTvkyIFjkJlIoDtFAMoifNQtaBEZlXVGV4dEJ1dHRvbg=='), secondPage)
-playButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('RSqFGAgwaJFOtSrnTZFeqLMmiWIRjQzddIGhcAbCzpszMqTizncUhbEUGxheUJ1dHRvbg==')
+local playButton = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}), secondPage)
+playButton.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8400,11340,10185,12705,6930,12285,12180,12180,11655,11550})
 playButton.Size = UDim2.new(0.2, 0, 0.1, 0) -- Размер кнопки
 playButton.Position = UDim2.new(0.4, 0, 0.45, 0) -- Позиция кнопки по центру страницы
 playButton.BackgroundColor3 = Color3.new(1, 0, 0) -- Красный фон кнопки
-playButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('JBCmWOpRJzhpzHSUDorbGJocoetVCkHerYXTDkprdvPnXwcUtdsFjQvU1RBUlQg4oqZ4oGg77mP4oGg4oqZ') -- Начальный текст кнопки
+playButton.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8715,8820,6825,8610,8820,3360,23730,14490,16065,23730,13545,16800,25095,19425,15015,23730,13545,16800,23730,14490,16065}) -- Начальный текст кнопки
 playButton.TextColor3 = Color3.new(1, 1, 1)
 playButton.Font = Enum.Font.SourceSansBold
 playButton.TextScaled = true
 
--- Создаем текст NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('ltsoGLjUBfQXPWYUYxhzWBfAYcgxRMopMSkZpjBQuJRtwpAJqtYdKwrRlJFRSBNUDMhIDoz') сверху кнопки
-local freeMp3Text = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('pMPLGMAPVVKszhyVvcBHrEOZkIDyJZGwjvJsbClSKydsxhLnXxZqKrcVGV4dExhYmVs'), secondPage)
-freeMp3Text.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('TDXOnwKTMALTznHtshXRczUIsJQtZrcLIOdawbGtexHCYkOddwSNnvxRnJlZU1wM1RleHQ=')
+-- Создаем текст PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,8610,7245,7245,3360,8085,8400,5355,3465,3360,6090,5355}) сверху кнопки
+local freeMp3Text = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,7980,10185,10290,10605,11340}), secondPage)
+freeMp3Text.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,11970,10605,10605,8085,11760,5355,8820,10605,12600,12180})
 freeMp3Text.Size = UDim2.new(0.2, 0, 0.09, 0) -- Размер текста
 freeMp3Text.Position = UDim2.new(0.4, 0, 0.55, 0) -- Позиция текста над кнопкой
 freeMp3Text.BackgroundColor3 = Color3.new(1, 1, 0) -- Желтый фон текста
 freeMp3Text.BackgroundTransparency = 1 -- Прозрачный фон
-freeMp3Text.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('laRfsqmQLTCdNrsIwCGVsPcyZAOSnZjYfrLRiSJOWCAqtPjlqnfvYrNRlJFRSBNUDMhIDoz')
+freeMp3Text.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,8610,7245,7245,3360,8085,8400,5355,3465,3360,6090,5355})
 freeMp3Text.TextColor3 = Color3.new(1, 1, 0) -- Желтый цвет текста
 freeMp3Text.Font = Enum.Font.SourceSansBold
 freeMp3Text.TextScaled = true
@@ -245,42 +239,42 @@ freeMp3Text.TextScaled = true
 local function toggleMusic()
     if music.Playing then
         music:Stop()
-        playButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('rziOXrfdQlzaTkTHcgagueuQaoZMyyBRIWjIWYkrropTPXuLgHbOmLgU1RBUlQg4oqZ4oGg77mP4oGg4oqZ') -- Текст кнопки, когда музыка остановлена
+        playButton.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8715,8820,6825,8610,8820,3360,23730,14490,16065,23730,13545,16800,25095,19425,15015,23730,13545,16800,23730,14490,16065}) -- Текст кнопки, когда музыка остановлена
     else
         music:Play()
-        playButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('yXKIENWYIMXzrErqGhSwahsqdGThmrdMsrBsGMwZJvJXsLIUNPIirRa4pa2') -- Текст кнопки, когда музыка играет
+        playButton.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({23730,15750,19110}) -- Текст кнопки, когда музыка играет
     end
 end
 
 
 -- Список идентификаторов изображений для анимации
 local imageIds = {
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('LechJyklYvxJsalSRYkeQKDXpoKYzJyQUwIiElsmDoYSvrVOECACHgMcmJ4YXNzZXRpZDovLzE2MjU4NjUxMjI5'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('THscunYxboSbQHIcdhRkToWMweUtxQHwNTnqJWAMiAghssMEuknNSYWcmJ4YXNzZXRpZDovLzE2MjU4NjU0MjU5'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('hNFhFrAEIbEEwZYPUtwNYAynECxvBFArHwGtPMCwAGYhzwDBRsZwXSEcmJ4YXNzZXRpZDovLzE2MjU4NjU1ODU5'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('RQvFETjXpxDEnlmTEGtsCBYaEYhQPUIFskxTOGOCJdaCaOElROhKfoucmJ4YXNzZXRpZDovLzE2MjU4NjU3NDkx'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('CpGnFywqNzMmYSOrKNMCJVqraCjvjlUeMiRvWaPeeWERbBobRyrokvNcmJ4YXNzZXRpZDovLzE2MjU4NjYwNTUy'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('NVLnCQDKcioIHusBFMYANIkDPhgeLFYgzsbuuiQvQOWykxdKbmbhhjOcmJ4YXNzZXRpZDovLzE2MjU4NjcxMzk2'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('FEsMAzFQZbZQnnpVOIbxQcnErUDEVnEavqCGWYMjNSNkdslmjVVOUmicmJ4YXNzZXRpZDovLzE2MjU4NjcyOTE1'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('DANEyANwhiwDFiBpLfhRZTyWgWvZtzUrSsgMCUbnmZCKwqCcmCjqFnHcmJ4YXNzZXRpZDovLzE2MjU4Njc0NTk2'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('DBiDiczrhiXAyXWjyTCWflrqkaVNDtWuiHWoyuoObmcXUFvIRNMUeLMcmJ4YXNzZXRpZDovLzE2MjU4Njc2NDky'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('TSEpYidkDcRDcJsRZFsEnpHZwprtQlZgxafeoFpQHPfbeCTXpuanUETcmJ4YXNzZXRpZDovLzE2MjU4Njc4MDg1'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('gqmHjdkprmxPemkDbgNAwzOMNRDBRLClzSEhEjaQWnJOzRLsIBtlyvAcmJ4YXNzZXRpZDovLzE2MjU4Njg4NzE0'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('inOFxxIQrSJBGrzOSheQqfKjZGGqqVaZToCztrozDRZCzsBLJeIEFImcmJ4YXNzZXRpZDovLzE2MjU4Njg5OTcx'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('DROlfEUIFHxvGnABOQFTEfKfJqOVtgPHAXJKSGEZjLfUEPZYNXjMFsHcmJ4YXNzZXRpZDovLzE2MjU4NjkxMzYy'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('uANnONgsWXpPbngTATIMDwHaCJCMTKjfwazjZYejXCjJYJUpUUxRxYkcmJ4YXNzZXRpZDovLzE2MjU4NjkzMDE5'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('NYxIqSNMFqBhcDDerIkXGXXHvVeVDnHGShEOgDRPQommMFGYWGQVdDNcmJ4YXNzZXRpZDovLzE2MjU4Njk0NjAz'), 
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qKZYyGVhpRFbpcaOSaptRJNmunWsmCwxahqGUonPdxuuYSwSRpMhedDcmJ4YXNzZXRpZDovLzE2MjU4NzA2NjI5'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('MbJxMiCNTBNnlewFTWOoQWbTYFQxWoxbCHQItUZRDcSwBfnpxsqKpZZcmJ4YXNzZXRpZDovLzE2MjU4NzA4MTcw'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PLUIczkAmkVRvMLaUaNQcWJtMGOxIhDcauPAQtaolxpjibJdajWALuScmJ4YXNzZXRpZDovLzE2MjU4NzA5ODIw'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('nXrKuyLeipvXcCyWxwbRHiLuvEOzajCGyIRvmVbKKLTHRaSIUqmqaQCcmJ4YXNzZXRpZDovLzE2MjU4NzExOTkz'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('CfFIyVTWmCuWfrJwrmmxSWtVXPPoOGJqQxUGhsvftnfcHIedGUEDYHucmJ4YXNzZXRpZDovLzE2MjU4NzEzNTg2'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('VJTRiIgJkvchdFViSLOFMpUmBaWLptEndeOVSKziTDTqtBVnmHvfpAqcmJ4YXNzZXRpZDovLzE2MjU4NzIzMjI3'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('IfzjmQzhnRVYcCogMZLdbpwofonodMaPaIUGAdQliMoUXgZFwFXexvLcmJ4YXNzZXRpZDovLzE2MjU4NzI0Nzc2')
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5565,5145,5250,5250,5985}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5565,5460,5250,5565,5985}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5565,5565,5880,5565,5985}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5565,5775,5460,5985,5145}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5670,5040,5565,5565,5250}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5775,5145,5355,5985,5670}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5775,5250,5985,5145,5565}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5775,5460,5565,5985,5670}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5775,5670,5460,5985,5250}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5775,5880,5040,5880,5565}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5880,5880,5775,5145,5460}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5880,5985,5985,5775,5145}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5985,5145,5355,5670,5250}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5985,5355,5040,5145,5985}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5985,5460,5670,5040,5355}), 
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5040,5670,5670,5250,5985}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5040,5880,5145,5775,5040}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5040,5985,5880,5250,5040}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5145,5145,5985,5985,5355}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5145,5355,5565,5880,5670}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5250,5355,5250,5250,5775}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5250,5460,5775,5775,5670})
 }
 
 -- Создаем два ImageLabel на второй странице
-local gifImage1 = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('WRQbgedPhPAgAxKMtpdzvLLIZDyGgGbTqNxbwXNxGxFfBvSmJgcArHxSW1hZ2VMYWJlbA=='))
+local gifImage1 = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11445,10185,10815,10605,7980,10185,10290,10605,11340}))
 gifImage1.Parent = secondPage
 gifImage1.Size = UDim2.new(0, 100, 0, 100)
 gifImage1.Position = UDim2.new(1, -110, 1, -110)
@@ -328,32 +322,32 @@ spawn(animateGif)
 
 -- Список идентификаторов изображений для анимации
 local imageIds = {
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('pgyHbMoGdzKnzciZpGcgMmZGuckIDEQLkTRzEHammekLbogauuOcerUcmJ4YXNzZXRpZDovLzE2MjU4NjUxMjI5'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('VeqAxJccqhbPaYwPRvCwpnwKYTtERoDHThcrgNOPTANVmSEnPWvKcBGcmJ4YXNzZXRpZDovLzE2MjU4NjU0MjU5'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('OLkXlJxVWLJBIGqKZqJfooRGRBTThGByrDCIAQrRTtOkQhmQseiTUfLcmJ4YXNzZXRpZDovLzE2MjU4NjU1ODU5'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SudLCYzQaZBjZgvDRByudCnmiiVLSTWpvvzSITbwLymjAWQWaItwFzXcmJ4YXNzZXRpZDovLzE2MjU4NjU3NDkx'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('MlheCNmEdsDQYaTodSGXnTVZFprgGVKvQAlQgNykHmcqxVIPyUNpHPGcmJ4YXNzZXRpZDovLzE2MjU4NjYwNTUy'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('OJMNzwSNhSSJQzGNTGhelKBCCwdZxGMxBNcQuYwvrgqxRSVPFFdRXMhcmJ4YXNzZXRpZDovLzE2MjU4NjcxMzk2'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('YTqcxgDROjtlPZuYWMdndSaWBjzoTGhbZQVItedSDIbcDzsqsIzmKYrcmJ4YXNzZXRpZDovLzE2MjU4NjcyOTE1'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('pMxLsouwPYphxQgQXvhjvVyDChfgnVNZdYjMBfIwBrNVOFvRyTlvXVUcmJ4YXNzZXRpZDovLzE2MjU4Njc0NTk2'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('XGGcYOVAviPlVDEfdqiozKadRmjKBlsHPOAaQZdTFPeRUicyrmPbpgvcmJ4YXNzZXRpZDovLzE2MjU4Njc2NDky'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('RsSiMvmWgxYrNfMxeYHNXAFGDCkuyMdBgykFMJPxiwXFFJeOumbNrFOcmJ4YXNzZXRpZDovLzE2MjU4Njc4MDg1'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('jMFFWcyneCXnTTKvCBvhbQcGXDXkTfFaGCqTdQqhlWrPsdYXyHQGhVRcmJ4YXNzZXRpZDovLzE2MjU4Njg4NzE0'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('EBWsFovILIHRvJKHRkYUsWWQqGULZIbxiHzzKwRIovHpHUNkjNKUcdLcmJ4YXNzZXRpZDovLzE2MjU4Njg5OTcx'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('nqVhNyJgektrjOnljRzzykYLVFiWhPQGoudtcxZpizDgvmdUiigIsoAcmJ4YXNzZXRpZDovLzE2MjU4NjkxMzYy'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SiKMSmbGtFpaHHpTttPerLGvWadVfTaLGuIpOlkejwFFwiFwKkVsaGKcmJ4YXNzZXRpZDovLzE2MjU4NjkzMDE5'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qDUZDhzhmSZNzEaMEiIggmCorBdvpalTLvdNfKyftNPsHKphlFhDhLtcmJ4YXNzZXRpZDovLzE2MjU4Njk0NjAz'), 
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('EflqMRDKmKtwicQcfMDrSKRvNfVRozOuoCxQXFwNjykmagZpaCRMHdRcmJ4YXNzZXRpZDovLzE2MjU4NzA2NjI5'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qJasxgNYMsQtUlSdOpfpTkIwRMmhpaocSWyOQMGJFnbkYweAqObgNeocmJ4YXNzZXRpZDovLzE2MjU4NzA4MTcw'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('HpIwTJiDdRrDdQBbdfjpoQfdXmLRJSSPeyHAIOriEwjcggZzLVqehaIcmJ4YXNzZXRpZDovLzE2MjU4NzA5ODIw'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('IEMEQJdMieCKbIjGUPcUruQnlBJPyarQKkoDcuyVTcUEJgvBjUQTlMmcmJ4YXNzZXRpZDovLzE2MjU4NzExOTkz'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('dzCrHgxUgTumkkkXvSevocwvUZSemIErAjgcvYBIZwyYrBycVjOStWRcmJ4YXNzZXRpZDovLzE2MjU4NzEzNTg2'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SZrshAZaoiEZxWLwhwPYgEYvizlLhxnbLaGvzjjvQPTjwdvNdIJtfNZcmJ4YXNzZXRpZDovLzE2MjU4NzIzMjI3'),
-    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('oQeWVEBNuBmvDvYvRAXkvxOZUUmnPuavTQapMVKzFIPFIGARlZUOiMkcmJ4YXNzZXRpZDovLzE2MjU4NzI0Nzc2')
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5565,5145,5250,5250,5985}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5565,5460,5250,5565,5985}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5565,5565,5880,5565,5985}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5565,5775,5460,5985,5145}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5670,5040,5565,5565,5250}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5775,5145,5355,5985,5670}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5775,5250,5985,5145,5565}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5775,5460,5565,5985,5670}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5775,5670,5460,5985,5250}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5775,5880,5040,5880,5565}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5880,5880,5775,5145,5460}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5880,5985,5985,5775,5145}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5985,5145,5355,5670,5250}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5985,5355,5040,5145,5985}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5670,5985,5460,5670,5040,5355}), 
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5040,5670,5670,5250,5985}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5040,5880,5145,5775,5040}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5040,5985,5880,5250,5040}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5145,5145,5985,5985,5355}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5145,5355,5565,5880,5670}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5250,5355,5250,5250,5775}),
+    PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5250,5565,5880,5775,5250,5460,5775,5775,5670})
 }
 
 -- Создаем два ImageLabel на второй странице
-local gifImage1 = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PjEcupMEbLMCJfmZFRCOxGTVQLYmVGGVojEYuYkhXuLkHndaouqlLJZSW1hZ2VMYWJlbA=='))
+local gifImage1 = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11445,10185,10815,10605,7980,10185,10290,10605,11340}))
 gifImage1.Parent = secondPage
 gifImage1.Size = UDim2.new(0, 100, 0, 100)
 gifImage1.Position = UDim2.new(0, 10, 0, 10)
@@ -407,30 +401,30 @@ playButton.MouseButton1Click:Connect(toggleMusic)
 
 
 -- Создаем локальную переменную для хранения секций меню
-local sections = {NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('iNkSykkDNhKNXoBWoxoRkIFGniunQVKTPiViCeKUcpDmbABFmodtmwySQ=='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('JiUsItruUmZtpXVloXqXJQVaQqaStgxHWRdsFbpzGesHahhwcYeHKvMSUk='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('ZyZIyBMdeBRTMzARavEWETKYAQjDlfQkMfNdWaONfeEYIRyQDqmrpoQSUlJ'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('ZcJsvoorjAVBAuQGTQPJJDBOHwhzQJKABpoyMQyGTBbpXPqOyliWTppSVY='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qatpJkViqbbaKwVWPuAATYQScDGAMfifKCGNSEiTmbgKITnbNAtAMbCSW5mb3JtYXRpb24=')}
+local sections = {PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,7665}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,7665,7665}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,9030}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11655,11970,11445,10185,12180,11025,11655,11550})}
 
 -- Создаем локальную переменную для хранения кнопок меню
 local buttons = {
-    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PsUfhAWCYZGVrXOIzeqKLMosDzJcUeNpuRHmzwGkvxGnkRogIrIqSfWSQ==')] = {NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qGFgEGyiKmXZxXIRxIiQtwZeDZywNHeQgjeXMVqpVQNuauzsoZTydyqRmxpbmc='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('oARCPBdbMbmPxAGMzZLmCotakfCOQYUzIFaMEYzIQJZPuemLyQgJsnSSW52aXNpYmxl'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('EfzFIEwFbSKGLznNhGWOqnYaWvQNFJLCwSErTfYzuyJHWbjvVVBWqlkSW5maW5pdGUgWWllbGQ='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('eZjwXCaHMQDGSKKOwkTruXUledtGVRCyQqjLGkpvewFenANCuqSgxPJS2V5Ym9hcmQ='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SCKwVKKSWOywKjvlNFMxqVWgkoZmRlWrBTBkjPtsfqZzipTHHgEAjusQlRvb2xz'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('zAjMjiTFJuKHohEqNIcuOyKFEjUbGfajNCsWOtvWBeqqZXWfAQnWBNJSW5mbyBJdGVtIE5hbWUgKGxvZ3Mp')},
-    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('dzKsNBLfRSQxnPSsfFqPXsmIRYPSNgVYHfNsoNVkUZojkdxjhiosJKxSUk=')] = {NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('afSoKkfOCuUycFIccUZlGdCtARErNgvJePdIcdtgvGQjPxwRiNoXjuyVGVsZWtpbmVzaXM='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('yJoHTVPhddtCqPYYqMyyhInkEuOiVYOFqiCkDhmWluQApqHJTdCPXwoTXVsdGkgR2VhciBQcmVzcyAoRSk='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('WaRzRrLJypyrQJpvhtXwWqvvxXMHbJJKLhtVTqwJoHKIXQrWAbnJBbZTXVsdGkgR2VhciAoQW5vdGhlciB2ZXJzaW9uKQ=='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('tEXXkPIPuRXaqvnkVAKMyJEDkCqqKilczZffujrayXNbRZLMFgaiLJgRm9jdXMoSXRlbSk='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('gmardyHlznPoTGqOypauzHPHwLmBvdfELVIIyLOWVcPcolBgmaUjhVwQXZhdGFyIHVwc2lkZSBkb3duIChGRSk='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('txWOTJnsjpcWgIOQhzTIDjFwIFwTBQbyxKUyvdcCzMDdDkgEkkOmASJQ2hhdCBTcHk=')},
-    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('suZJdrRpMhhRyDbsvLOJZSFTfTbixktJanxePZlRkykmBuDHkVrVjMnSUlJ')] = {NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('FMADlVxXewZwGsQiBsQrDDPHrWtiIMKZuCTEYpohTpiAMPeJjJucmLbQ2hhdCB0cmFuc2xhdG9y'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('yceSybwcwirhNRUQIHBUXdreaxOfqunBKOkDvtdXfJmSRYGKFmoDePPQnVsbHlpbmcgQ2hhdCBTcGFtIChSVVMp'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('LgALPrfAHMtsmaeAPIHeklztwGIeXTaKGMcbPTVeXkRXYVihtIkMhTHQnVsbHlpbmcgQ2hhdCBzcGFtIChFTkcp'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('eugIvraMwnKipbzqYTfqqYOIiiZJaxNCxdpqqSLzQoJGygVSYuvrBhkS2lsbCBhbGwgTlBD'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('FHDaQkmUfSDOKnqaVZjJHAboRlpGxViRkSTlyLlzDSSZOduGpcYQenzQnJpbmcgYWxsIE5QQw=='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('hHMDVFgOCTkDWKJHMExCbePJsqjxakJHYPwYAjPlqMqAiNHNnWSnmnQQW50aS1BRkM=')},
-    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('BkQERADUpTLneyXoxbQFJvNXlgWPFvYiWGGJIIhetURTowTGgBnoDMXSVY=')] = {NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('LqWXzJiBftlhhqyGpMyzbJaDnHXwJeBnFUWzwLwpvGheURwxptUWCGfQXVkaW8gU3RlYWxlcg=='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('dMzyAaJREktRXaFIPBFTakxBnDsmnETNmDsAJrLVSWKBIkoFYIqVMefQ2xpY2sgQWxsIEJ1dHRvbnM='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('wdIzswfEAZuToAcCgQKBdBnnQBqxzyUGSAXYuVBXfmjZrkNthukXDTUVG91Y2ggYWxsIHdhbGxz'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PZkdIOyeyKPNPcbIYPpVZmYbShGWEWROopFCfpWCrUJHwLQGIVcUJKFU3dvcmQgUmVhY2g='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('nNmDmXcaJBOgraEhEWidofFMxCcSpJxVFueGptlAsMCOVSSQFMqLsDXcjYgYW5pbWF0aW9ucw=='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('zkGAFmMZVNeysaceFAyDRbzbuvAaceaILgUUfOGWAIZbRVcpbYtEeGzwr9Vbmtub3duIGRyaW5rPw==')},
-    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('ZgSTEvSOapbRLZiqqbWYMijSczdsUQAFatbGDzAhHdNEjWnOkrTDLedSW5mb3JtYXRpb24=')] = {}
+    [PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665})] = {PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,11340,11025,11550,10815}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,12390,11025,12075,11025,10290,11340,10605}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11025,11550,11025,12180,10605,3360,9345,11025,10605,11340,10500}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7875,10605,12705,10290,11655,10185,11970,10500}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,8820,11655,11655,11340,12075}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11655,3360,7665,12180,10605,11445,3360,8190,10185,11445,10605,3360,4200,11340,11655,10815,12075,4305})},
+    [PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,7665})] = {PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,11340,10605,11235,11025,11550,10605,12075,11025,12075}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8085,12285,11340,12180,11025,3360,7455,10605,10185,11970,3360,8400,11970,10605,12075,12075,3360,4200,7245,4305}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8085,12285,11340,12180,11025,3360,7455,10605,10185,11970,3360,4200,6825,11550,11655,12180,10920,10605,11970,3360,12390,10605,11970,12075,11025,11655,11550,4305}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,11655,10395,12285,12075,4200,7665,12180,10605,11445,4305}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6825,12390,10185,12180,10185,11970,3360,12285,11760,12075,11025,10500,10605,3360,10500,11655,12495,11550,3360,4200,7350,7245,4305}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,10920,10185,12180,3360,8715,11760,12705})},
+    [PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,7665,7665})] = {PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,10920,10185,12180,3360,12180,11970,10185,11550,12075,11340,10185,12180,11655,11970}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,12285,11340,11340,12705,11025,11550,10815,3360,7035,10920,10185,12180,3360,8715,11760,10185,11445,3360,4200,8610,8925,8715,4305}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,12285,11340,11340,12705,11025,11550,10815,3360,7035,10920,10185,12180,3360,12075,11760,10185,11445,3360,4200,7245,8190,7455,4305}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7875,11025,11340,11340,3360,10185,11340,11340,3360,8190,8400,7035}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,11970,11025,11550,10815,3360,10185,11340,11340,3360,8190,8400,7035}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6825,11550,12180,11025,4725,6825,7350,7035})},
+    [PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,9030})] = {PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6825,12285,10500,11025,11655,3360,8715,12180,10605,10185,11340,10605,11970}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,11340,11025,10395,11235,3360,6825,11340,11340,3360,6930,12285,12180,12180,11655,11550,12075}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,11655,12285,10395,10920,3360,10185,11340,11340,3360,12495,10185,11340,11340,12075}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8715,12495,11655,11970,10500,3360,8610,10605,10185,10395,10920}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,5670,3360,10185,11550,11025,11445,10185,12180,11025,11655,11550,12075}), PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({20370,20055,8925,11550,11235,11550,11655,12495,11550,3360,10500,11970,11025,11550,11235,6615})},
+    [PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11655,11970,11445,10185,12180,11025,11655,11550})] = {}
 }
 
 -- Создаем локальную переменную для хранения цветов кнопок
 local colors = {
-    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('fusuTjkDUJWYDUNqdlkbnLROBibDQfvTqEHregSNcGHBjiAWcxtqLEnSQ==')] = Color3.new(0, 0, 0),
-    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PqwZZAUIGVNGhYUMksbXsczEAMKhtFhQMzEbcqGIOqEYYognpbLvSQlSUk=')] = Color3.new(0, 0, 0),
-    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('QWKZiWFFAimtjKFFWaUelzVbUDLIzvpnPpFoiiGJOTcTHwkFmpAMcBGSUlJ')] = Color3.new(0, 0, 0),
-    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('MgCJObGHHngsdSWPvtNgrhBRbpclAFfPtiYiXEOnuTfdkNeiTLYdHNaSVY=')] = Color3.new(0, 0, 0),
-    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('HexCKkJEojvZcsqoJBQiMzpRpDctQOzwyMyeCAXtxsFzicbUOgSKOBASW5mb3JtYXRpb24=')] = Color3.new(0, 0, 0)
+    [PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665})] = Color3.new(0, 0, 0),
+    [PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,7665})] = Color3.new(0, 0, 0),
+    [PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,7665,7665})] = Color3.new(0, 0, 0),
+    [PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,9030})] = Color3.new(0, 0, 0),
+    [PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11655,11970,11445,10185,12180,11025,11655,11550})] = Color3.new(0, 0, 0)
 }
 
 -- Создаем функцию, которая создает секцию меню
 local function createSection(name, index)
     -- Создаем локальную переменную для хранения фрейма секции
-    local section = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('jQvnbjlOqdQlmMfzLSwWCygcUzVOPLHqXnWQHiAyqMZLGLGsHtEujRPRnJhbWU='), menu)
+    local section = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,11970,10185,11445,10605}), menu)
     section.Name = name
     section.Size = UDim2.new(0.2, 0, 0.9, 0)
     section.Position = UDim2.new(0.2 * (index - 1), 0, 0.1, 0)
@@ -438,8 +432,8 @@ local function createSection(name, index)
     section.BackgroundTransparency = 1
 
     -- Создаем локальную переменную для хранения заголовка секции
-    local sectionTitle = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('oLKmhDfvMVZQdiJDiZXiCAEqijsVnvYsCbcMQkNzdFSoUNalzjLnttKVGV4dExhYmVs'), section)
-    sectionTitle.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('aFSMzFDqGOkbpvzPCtLAZAZoiNcShLejAOBkyMTEBUIwJuKSUhQUPViU2VjdGlvblRpdGxl')
+    local sectionTitle = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,7980,10185,10290,10605,11340}), section)
+    sectionTitle.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8715,10605,10395,12180,11025,11655,11550,8820,11025,12180,11340,10605})
     sectionTitle.Size = UDim2.new(1, 0, 0.1, 0)
     sectionTitle.Position = UDim2.new(0, 0, 0, 0)
     sectionTitle.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -456,7 +450,7 @@ end
 -- Создаем функцию, которая создает кнопку меню
 local function createButton(name, section, index)
     -- Создаем локальную переменную для хранения кнопки
-    local button = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('oRgEVIWUWKGxxeyCdxAKlskAFbhgOxaoCkrgQeROaRKVmNWWJxofVcyVGV4dEJ1dHRvbg=='), section)
+    local button = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550}), section)
     button.Name = name
     button.Size = UDim2.new(0.9, 0, 0.1, 0)
     button.Position = UDim2.new(0.05, 0, 0.1 * (index + 1), 0)
@@ -474,13 +468,13 @@ end
 -- Создаем функцию, которая создает информацию о меню
 local function createInformation(section)
     -- Создаем локальную переменную для хранения текста информации
-    local infoText = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PLSWXFlZCZpdkHVvYrUqxVQARxmNuFIwgcLIhSpqyXpYihCvnbSqeOeVGV4dExhYmVs'), section)
-    infoText.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PGlwhBBdYuMaWhshymGfqpbEDPdSGfGigvZKToSXTkxTADTsteBiIDjSW5mb1RleHQ=')
+    local infoText = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,12600,12180,7980,10185,10290,10605,11340}), section)
+    infoText.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11655,8820,10605,12600,12180})
     infoText.Size = UDim2.new(0.9, 0, 0.8, 0)
     infoText.Position = UDim2.new(0.05, 0, 0.2, 0)
     infoText.BackgroundColor3 = Color3.new(0, 0, 0)
     infoText.BackgroundTransparency = 0.5
-    infoText.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('MlozqupOzIKFphYprcJyJLUzqWigUNosNolIHZkTdexDSOyRZKniVCJKOKBoOC5keKBoOKAouKBoO+5j+KBoOKAouKBoClUaGlzIGlzIHRoZSBHdWkgbWVudSAuXG4gWW91IGNhbiBhY3RpdmF0ZSB0aGUgc2NyaXB0IGJ5IGNsaWNraW5nIG9uIHRoZSBidXR0b24uXG4gRW5qb3kgdGhlIGdhbWUhPuKBoC7igaA8')
+    infoText.Text = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({4200,23730,13545,16800,23520,19425,15225,23730,13545,16800,23730,13440,17010,23730,13545,16800,25095,19425,15015,23730,13545,16800,23730,13440,17010,23730,13545,16800,4305,8820,10920,11025,12075,3360,11025,12075,3360,12180,10920,10605,3360,7455,12285,11025,3360,11445,10605,11550,12285,3360,4830,9660,11550,3360,9345,11655,12285,3360,10395,10185,11550,3360,10185,10395,12180,11025,12390,10185,12180,10605,3360,12180,10920,10605,3360,12075,10395,11970,11025,11760,12180,3360,10290,12705,3360,10395,11340,11025,10395,11235,11025,11550,10815,3360,11655,11550,3360,12180,10920,10605,3360,10290,12285,12180,12180,11655,11550,4830,9660,11550,3360,7245,11550,11130,11655,12705,3360,12180,10920,10605,3360,10815,10185,11445,10605,3465,6510,23730,13545,16800,4830,23730,13545,16800,6300})
     infoText.TextColor3 = Color3.new(1, 1, 1)
     infoText.TextScaled = true
     infoText.Font = Enum.Font.SourceSansBold
@@ -494,8 +488,8 @@ local function createMenu()
         -- Создаем секцию
         local section = createSection(sectionName, i)
         
-        -- Если секция называется NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('AWqBbbXdZcfazoNwVUsUfAvWOSjPsoLjcVkocIglKlVxdPajeUywfTeSW5mb3JtYXRpb24='), то создаем информацию о меню
-        if sectionName == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PjsVNuVIeWMlwFjVPETajbjafNoIPYPMcPdrfpPKGemhkKLozRCTiquSW5mb3JtYXRpb24=') then
+        -- Если секция называется PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11655,11970,11445,10185,12180,11025,11655,11550}), то создаем информацию о меню
+        if sectionName == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11655,11970,11445,10185,12180,11025,11655,11550}) then
             createInformation(section)
         end
         
@@ -506,37 +500,27 @@ local function createMenu()
             
             -- Добавляем функцию, которая срабатывает при нажатии на кнопку
             button.MouseButton1Click:Connect(function()
-                if button.Name == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('txNqYQHOgOzrqHhmkmxHSLxwaTRsubGBkUsSgbBbbMwNCtnmGgXUqjmRmxpbmc=') then
-                    loadstring(game:HttpGet(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('msLcpvSDOwEBmwXlxZVrfBtpBYgIQTyPjIOXxuUZIQpxFAsHFNxghFEaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzBCZW4xL2ZlLi9tYWluL0ZsaW5nJTIwR1VJ')))()
-                elseif button.Name == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('yvzjYvdIPdXJhbEBatTfMclqnBMMMeKxnVzsgCTuKCMPJrdFHANDVRXSW52aXNpYmxl') then
-                        loadstring(game:HttpGet(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('gqOYcJFSKZSccEiTbEQhZAFYAxhpashuJZmCIysIAgaagfVXLYJrdNoaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0dob3N0UGxheWVyMzUyL1Rlc3Q0L21haW4vSW52aXNpYmxlJTIwR3Vp')))()
-                      elseif button.Name == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('gttDNaklqnqBfJNynfAHDfmodemHdUNNIUlQPKIjatpBeHPdGLUJViBSW5maW5pdGUgWWllbGQ=') then
-                        loadstring(game:HttpGet(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('jIwNonfrivfeisdLWREusIbcCndhItDngLhgAhfbXNQEoTPvNQOVHxOaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0VkZ2VJWS9pbmZpbml0ZXlpZWxkL21hc3Rlci9zb3VyY2U=')))() 
-                      elseif button.Name == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('IUulSIdobjnKFYGpEXrondTRdLsaeUcPtirWVOCIUuwHAYRnJQRTexiS2V5Ym9hcmQ=') then
-                         loadstring(game:HttpGet(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('ipgSRsbCDcEkjyZTCfWzwVbxPmrugFferEKfqDhlxmTNLyxBTaMcCrxaHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9SZWRaZW5YWVovNGQ4MGJmZDcwZWUyNzAwMDY2MGU0YmZhNzUwOWM2NjcvcmF3L2RhOTAzYzU3MDI0OWFiM2MwYzFhNzRmMzQ2NzI2MDk3MmMzZDg3ZTYvS2V5Qm9hcmQlMjUyMEZyb20lMjUyME9oaW8lMjUyMEZyJTI1MjBGcg==')))()    
-                     local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-function qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
-
-data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
-
-
+                if button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,11340,11025,11550,10815}) then
+                    loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,5040,6930,10605,11550,5145,4935,10710,10605,4830,4935,11445,10185,11025,11550,4935,7350,11340,11025,11550,10815,3885,5250,5040,7455,8925,7665})))()
+                elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,12390,11025,12075,11025,10290,11340,10605}) then
+                        loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,7455,10920,11655,12075,12180,8400,11340,10185,12705,10605,11970,5355,5565,5250,4935,8820,10605,12075,12180,5460,4935,11445,10185,11025,11550,4935,7665,11550,12390,11025,12075,11025,10290,11340,10605,3885,5250,5040,7455,12285,11025})))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11025,11550,11025,12180,10605,3360,9345,11025,10605,11340,10500}) then
+                        loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,7245,10500,10815,10605,7665,9345,4935,11025,11550,10710,11025,11550,11025,12180,10605,12705,11025,10605,11340,10500,4935,11445,10185,12075,12180,10605,11970,4935,12075,11655,12285,11970,10395,10605})))() 
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7875,10605,12705,10290,11655,10185,11970,10500}) then
+                         loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,10815,11025,12075,12180,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8610,10605,10500,9450,10605,11550,9240,9345,9450,4935,5460,10500,5880,5040,10290,10710,10500,5775,5040,10605,10605,5250,5775,5040,5040,5040,5670,5670,5040,10605,5460,10290,10710,10185,5775,5565,5040,5985,10395,5670,5670,5775,4935,11970,10185,12495,4935,10500,10185,5985,5040,5355,10395,5565,5775,5040,5250,5460,5985,10185,10290,5355,10395,5040,10395,5145,10185,5775,5460,10710,5355,5460,5670,5775,5250,5670,5040,5985,5775,5250,10395,5355,10500,5880,5775,10605,5670,4935,7875,10605,12705,6930,11655,10185,11970,10500,3885,5250,5565,5250,5040,7350,11970,11655,11445,3885,5250,5565,5250,5040,8295,10920,11025,11655,3885,5250,5565,5250,5040,7350,11970,3885,5250,5565,5250,5040,7350,11970})))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,8820,11655,11655,11340,12075}) then 
+                          loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11760,10185,12075,12180,10605,10290,11025,11550,4830,10395,11655,11445,4935,11970,10185,12495,4935,7980,7245,8820,8190,8400,7980,5040,7245})))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11655,3360,7665,12180,10605,11445,3360,8190,10185,11445,10605,3360,4200,11340,11655,10815,12075,4305}) then 
+                          loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8820,11655,11445,10185,12180,11655,5250,5040,5040,5145,4935,8190,12075,10290,10815,12075,10920,12075,10500,11550,4935,11445,10185,11025,11550,4935,7665,11550,10710,11655})))() 
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,10605,11340,10605,11235,11025,11550,10605,12075,11025,12075}) then 
+                          loadstring(game:HttpGet((PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8715,6825,9450,9240,7560,8925,6930,4935,7035,11655,11550,12180,11970,11655,11340,4725,12285,11760,10500,10185,12180,10605,4935,11445,10185,11025,11550,4935,8610,7245,6825,7140,8085,7245,4830,11445,10500})),true))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8085,12285,11340,12180,11025,3360,7455,10605,10185,11970,3360,8400,11970,10605,12075,12075,3360,4200,7245,4305}) then 
+                           lp = game:GetService(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer
  
-
-
-
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('QVRnufwcFKqtnNnXyhSwmtkZwidmylUhHwCDrBLMfdgkMyyVydqrCxlQlRvb2xz') then 
-                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('UHEwVjTMbBNllUMuqbuIVMmyJnLWWpJVDwwvGwIFdectqfdeCkvVrKnaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L0xFVE5QTDBF')))()
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('LAYZbsSLkjktibQagtKbDUAnCKGyjXBMfIiuALOHTmKTYZPPilwFgBLSW5mbyBJdGVtIE5hbWUgKGxvZ3Mp') then 
-                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('MeEcQhprHhKgIkpIOkyfKxoquYnhNxhTnlTCeFRVuduAWDaPQoDWdrfaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vSW5mbw==')))() 
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('AUhNcSAAUBagjxGYdeCVweDdalPNzkqZAdbNpAIJWyUpqsVneBTNIcyVGVsZWtpbmVzaXM=') then 
-                          loadstring(game:HttpGet((qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('wEyDmOYwHMNFNtlEgfBWhnaXJtcaoqbQEoDNTVWTxDqZbihGrkCSECYaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NBWlhIVUIvQ29udHJvbC11cGRhdGUvbWFpbi9SRUFETUUubWQ=')),true))()
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('AymhVQTZMSqYXSVpvXlXrWueNXHzesfgvQCgbYFYRzNFwhRfMsHAXMATXVsdGkgR2VhciBQcmVzcyAoRSk=') then 
-                           lp = game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('PuwVCRoeFeHkahXMJARvZdWYnCLOwzHUEcGTabWdkxoMwLKvHRsiJBSUGxheWVycw==')).LocalPlayer
- 
-game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('vSKMktqMGxHRFgEpgUhVjZbjrKgZOFoMDJurGyRZmKStWWLOLmzhVrTVXNlcklucHV0U2VydmljZQ==')).InputBegan:Connect(function(key)
+game:GetService(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605})).InputBegan:Connect(function(key)
  if key.KeyCode == Enum.KeyCode.E then
   for i,tool in pairs(lp.Backpack:GetChildren()) do
-   if tool:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('XONXXiRUbRjhoTsVnBuLSOoNQbQCcmOAZvhRGYUkIxnBFBTVqanNNrLVG9vbA==')) then
+   if tool:IsA(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,11655,11655,11340})) then
     tool.Parent = lp.Character
     tool:Activate()
     task.wait()
@@ -546,22 +530,22 @@ game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcH
  end
 end)
 
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('LnTTozGynyUtltOAqXRfPPMAXZPWKhYtCPTrIqqFhOTpXOzVeyPjArcTXVsdGkgR2VhciAoQW5vdGhlciB2ZXJzaW9uKQ==') then 
-                       loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('UNsHkgzzXyoEHBwvWrXsmneOKFcyQIomqgylCHRmwRqJFWbFAsMUHOkaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vR2Vhcg==')))()
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('opBepLksMzYXPhXwYFoDREOIQmZWHilJgtIwEjzUOnivtveDTIubDsKRm9jdXMoSXRlbSk=') then 
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8085,12285,11340,12180,11025,3360,7455,10605,10185,11970,3360,4200,6825,11550,11655,12180,10920,10605,11970,3360,12390,10605,11970,12075,11025,11655,11550,4305}) then 
+                       loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8820,11655,11445,10185,12180,11655,5250,5040,5040,5145,4935,8190,12075,10290,10815,12075,10920,12075,10500,11550,4935,11445,10185,11025,11550,4935,7455,10605,10185,11970})))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,11655,10395,12285,12075,4200,7665,12180,10605,11445,4305}) then 
                         local lp = game.Players.LocalPlayer
 local mouse = lp:GetMouse()
 
-local ft = Instance.new(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('VFsWyrKUuJkwGdTBtNlrRRRHdaRdgFJTgdvYGDZzriQsTdAVZMvAcbwVG9vbA=='))
-ft.Name = qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('oncKfMYlGkxdWqFShWvxfRDTjGqfTCIWYyEnEAsyFGipomMPbUpKWmvRm9jdXM=')
+local ft = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,11655,11655,11340}))
+ft.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7350,11655,10395,12285,12075})
 ft.RequiresHandle = false
 ft.Parent = lp.Backpack
 ft.Activated:Connect(function()
  local obj = mouse.Target
- if obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('HfVOBIEmERlSKwhPUxGAeQRujqxPenVsCsNAXNIUThlZexbinDUkWSSQmFzZVBhcnQ=')) or obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('AvNSnDZxQVgbGLYFapZIbaDHxmeeiWvAKLVudJzEHykNdMsjvzpLgHjUGFydA==')) or obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('CzpETIpqkwRdeleXhtByDVydcEnIoNowUNmrHTRWfNrUpIqXnUnLaYFTWVzaFBhcnQ=')) or obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('acYMhZGqQPNHxhPfrPfMStzvEYJzkBwtBkCugYWQzhzSmuzYcVgwPZtQ29ybmVyV2VkZ2VQYXJ0')) or obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('WdOsdfpCZrThGDtWcbWaEBBrNqkqBgCsZWcnBQhIMqVQCKizPQofqovVHJ1c3NQYXJ0')) or obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('qnhkXxaYiJTbmUaXwVBBIdNsJFMNlyRQasjcUBsYitqSfxuJzMjEGTaV2VkZ2VQYXJ0')) then
+ if obj:IsA(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,10185,12075,10605,8400,10185,11970,12180})) or obj:IsA(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8400,10185,11970,12180})) or obj:IsA(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8085,10605,12075,10920,8400,10185,11970,12180})) or obj:IsA(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,11655,11970,11550,10605,11970,9135,10605,10500,10815,10605,8400,10185,11970,12180})) or obj:IsA(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,11970,12285,12075,12075,8400,10185,11970,12180})) or obj:IsA(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({9135,10605,10500,10815,10605,8400,10185,11970,12180})) then
   if not obj.Anchored then
-      local bambam = Instance.new(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('bszXMKURorsBwevNkoybUDyPGLTKZJauucPWwqUKHnBjGClBztotPRvQm9keUFuZ3VsYXJWZWxvY2l0eQ=='))
-      bambam.Name = qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('mOtwKbkPGitbFJbVoCfvWDuJKdWdcVJURwmSVTvCctiqWedydqXXGeUQkFNIEJBTSBBSEFISEFIQUhIQUhBSA==')
+      local bambam = Instance.new(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,11655,10500,12705,6825,11550,10815,12285,11340,10185,11970,9030,10605,11340,11655,10395,11025,12180,12705}))
+      bambam.Name = PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,6825,8085,3360,6930,6825,8085,3360,6825,7560,6825,7560,7560,6825,7560,6825,7560,7560,6825,7560,6825,7560})
       bambam.Parent = obj
       bambam.AngularVelocity = Vector3.new(99999999,99999999,99999999)
       bambam.MaxTorque = Vector3.new(math.huge,math.huge,math.huge)
@@ -569,39 +553,39 @@ ft.Activated:Connect(function()
      end
  end
 end) 
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('XKOhxmYSPtkjhZQDMNTWBDfdKKXYNwuYTdoHweyclCpkbXKdSqupUBYQXZhdGFyIHVwc2lkZSBkb3duIChGRSk=') then 
-                         loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('aAEkXQzbuBNOXiDyOQYhfkUSlNxXojSxpxIUmmRfHydwVFehXFNPQwoaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vQXZhdGFy')))()
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('IVIiRGEtdEmoGPJMCmBKnHrzmsephVKxNgotwVDCwUxXtcWsqqKLsklQ2hhdCBTcHk=') then
-                         loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('NXlLeJaGITbbtHSdYnBsPMTropgmceWNIFEhSTSAyemkTIiYywXOiIFaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vU3B5')))()
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('VUlateUXluEImDwSnByhOUUyCsEiLchLMLCXEQarVdCxvjRMnwmnFeLQ2hhdCB0cmFuc2xhdG9y') then
-                        loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('CGedeRGwQyCajthrXPOApPFluCihcZujdkGwssVEHdFmgVFLEIDwwRxaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vVHJhbnM=')))() 
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('ULQskoYFSynnblWizbWOrBWdrhqFkvhHzHOyWNGLLBeaeJtzGRNnMeIQnVsbHlpbmcgQ2hhdCBTcGFtIChSVVMp') then
-                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('RbrHqjQNLuLpxLJfMkXfZtXKOZMPXMGsZLdpRDzVwIfTnFgwgxxAELPaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vQ2hhdFJ1')))() 
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('CHqeDRiwgKsKlmhRJvjGNiXPMLRVpsidLTSozmaiukPxKdCKrmyYNJHQnVsbHlpbmcgQ2hhdCBzcGFtIChFTkcp') then
-                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('ncgMoEoycgGtKCTykAFdnmtaVPGxhVyCuUUbdieXEuGbYCdpBFdavZzaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vQ2hhdEVu')))() 
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('IuHCdRpcZvValzBVEzBcjNbyeYwlqSMsDeCXWeQdWfoceBrnqzErvQPS2lsbCBhbGwgTlBD') then
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6825,12390,10185,12180,10185,11970,3360,12285,11760,12075,11025,10500,10605,3360,10500,11655,12495,11550,3360,4200,7350,7245,4305}) then 
+                         loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8820,11655,11445,10185,12180,11655,5250,5040,5040,5145,4935,8190,12075,10290,10815,12075,10920,12075,10500,11550,4935,11445,10185,11025,11550,4935,6825,12390,10185,12180,10185,11970})))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,10920,10185,12180,3360,8715,11760,12705}) then
+                         loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8820,11655,11445,10185,12180,11655,5250,5040,5040,5145,4935,8190,12075,10290,10815,12075,10920,12075,10500,11550,4935,11445,10185,11025,11550,4935,8715,11760,12705})))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,10920,10185,12180,3360,12180,11970,10185,11550,12075,11340,10185,12180,11655,11970}) then
+                        loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8820,11655,11445,10185,12180,11655,5250,5040,5040,5145,4935,8190,12075,10290,10815,12075,10920,12075,10500,11550,4935,11445,10185,11025,11550,4935,8820,11970,10185,11550,12075})))() 
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,12285,11340,11340,12705,11025,11550,10815,3360,7035,10920,10185,12180,3360,8715,11760,10185,11445,3360,4200,8610,8925,8715,4305}) then
+                          loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8820,11655,11445,10185,12180,11655,5250,5040,5040,5145,4935,8190,12075,10290,10815,12075,10920,12075,10500,11550,4935,11445,10185,11025,11550,4935,7035,10920,10185,12180,8610,12285})))() 
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,12285,11340,11340,12705,11025,11550,10815,3360,7035,10920,10185,12180,3360,12075,11760,10185,11445,3360,4200,7245,8190,7455,4305}) then
+                          loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8820,11655,11445,10185,12180,11655,5250,5040,5040,5145,4935,8190,12075,10290,10815,12075,10920,12075,10500,11550,4935,11445,10185,11025,11550,4935,7035,10920,10185,12180,7245,11550})))() 
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7875,11025,11340,11340,3360,10185,11340,11340,3360,8190,8400,7035}) then
                           -- Устанавливаем свойства SimulationRadius и MaxSimulationRadius для локального игрока
-sethiddenproperty(game.Players.LocalPlayer, qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('iefrMksLlRGGBvnHzsUmxtIFKHHqRZjrkxkEuXDoXUKpWMADNzOSIIaU2ltdWxhdGlvblJhZGl1cw=='), 112412400000)
-sethiddenproperty(game.Players.LocalPlayer, qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('zdsDcofzdDuuFeKzhNUCWLfuZmDUyUWPimKrDaaMzuhVvDQhVCymEFlTWF4U2ltdWxhdGlvblJhZGl1cw=='), 112412400000)
+sethiddenproperty(game.Players.LocalPlayer, PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8715,11025,11445,12285,11340,10185,12180,11025,11655,11550,8610,10185,10500,11025,12285,12075}), 112412400000)
+sethiddenproperty(game.Players.LocalPlayer, PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8085,10185,12600,8715,11025,11445,12285,11340,10185,12180,11025,11655,11550,8610,10185,10500,11025,12285,12075}), 112412400000)
 
 -- Перебираем всех потомков в Workspace
 for i, d in pairs(game.Workspace:GetDescendants()) do
     -- Проверяем, является ли d Humanoid и не принадлежит ли его Parent к игрокам
-    if d.ClassName == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('RbGLeDkNbqMtUuzFXXCvMBBdiLNthFXminArvQauwABVIdqTyoXYzzdSHVtYW5vaWQ=') and not game.Players:FindFirstChild(d.Parent.Name) then
+    if d.ClassName == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7560,12285,11445,10185,11550,11655,11025,10500}) and not game.Players:FindFirstChild(d.Parent.Name) then
         -- Устанавливаем здоровье NPC в 0
         d.Health = 0
     end
 end
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('WAdEfzxMFDLjWfgLgvEeCPihGisWUCJuHKAHsiedAFwBWuWavwDNnCkQnJpbmcgYWxsIE5QQw==') then
-                          local Players = game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('IxDnWXbYuitXKkgsWowGXmzSPdgMgRbEPhneRGlqyfScjxTxsEAeSwOUGxheWVycw=='))
-local RunService = game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('GEgdtSDimwToNfmxKvrKyAJoatwFmisDVyRhGHuoecwyBoFwPsIWNIUUnVuU2VydmljZQ==')) 
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,11970,11025,11550,10815,3360,10185,11340,11340,3360,8190,8400,7035}) then
+                          local Players = game:GetService(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8400,11340,10185,12705,10605,11970,12075}))
+local RunService = game:GetService(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605})) 
 
 Bring = Value
 while Bring do
   for i, player in ipairs(Players:GetPlayers()) do
     if player.Character then
       for i, model in ipairs(workspace:GetDescendants()) do
-        if model:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('TSVzLxfZzsuaISOKDdqXSGmgAFIyuMnzlTgGqPlcXXfDZgrjnoPToGnTW9kZWw=')) and model:FindFirstChild(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('wiTAMcaDwzFagVQOoLtZXRRJGoKHbMhWUEURWvHPRjkGYWNTjGnjyIcSHVtYW5vaWQ=')) then
+        if model:IsA(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8085,11655,10500,10605,11340})) and model:FindFirstChild(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7560,12285,11445,10185,11550,11655,11025,10500})) then
           model:MoveTo(player.Character.Head.Position)
         end
       end 
@@ -609,39 +593,39 @@ while Bring do
   end
   RunService.Heartbeat:Wait()
 end
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('aICpVFDaiTwUmXDjowwJtDHpnpMDEPLrfQAtLvLWKeYGlNslWikjTuhQW50aS1BRkM=') then
-                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('oPWeQLArhneYoBQuJxYXHCFZwJAvbVDfCiYJwLjfWUVmNeDkgUKqhmIaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3LzlRQ3l1YzJw')))()
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('NtIkQRcoZOhNIAMcFjoSBXminfjDdjgKCMWHWvdnjgsJIPAPeQZLJoGQXVkaW8gU3RlYWxlcg==') then
-                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('EdFzwEqWFtCPFyXOpvDHVQUWfSguJWEfeXKAMQIVrnxOSunHmMxEzGGaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L3RqOUI1NjVU')))()
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('jMeETsuYQnSiqjIpXIxCOIOhVowbjNsLrmmtKLMykrTmNNPDBIUyoeSQ2xpY2sgQWxsIEJ1dHRvbnM=') then
-                        game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('fvUXXakcTgaDzgrgCmczLDqeNKhuBsutWjyqfnbFecKaENdmwXUPOVoQ29yZUd1aQ==')).PurchasePrompt.Enabled = false
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6825,11550,12180,11025,4725,6825,7350,7035}) then
+                          loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11760,10185,12075,12180,10605,10290,11025,11550,4830,10395,11655,11445,4935,11970,10185,12495,4935,5985,8505,7035,12705,12285,10395,5250,11760})))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6825,12285,10500,11025,11655,3360,8715,12180,10605,10185,11340,10605,11970}) then
+                          loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11760,10185,12075,12180,10605,10290,11025,11550,4830,10395,11655,11445,4935,11970,10185,12495,4935,12180,11130,5985,6930,5565,5670,5565,8820})))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,11340,11025,10395,11235,3360,6825,11340,11340,3360,6930,12285,12180,12180,11655,11550,12075}) then
+                        game:GetService(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,11655,11970,10605,7455,12285,11025})).PurchasePrompt.Enabled = false
 _G.Lag = Value
 while _G.Lag do
 for i,v in pairs(workspace:GetDescendants()) do
-   if v:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('xCoktluGHtkwxiPbaRnRwEEZlDatsePMQQMZqThZFAFaSXVOoXjqJUfQ2xpY2tEZXRlY3Rvcg==')) then
+   if v:IsA(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7035,11340,11025,10395,11235,7140,10605,12180,10605,10395,12180,11655,11970})) then
     fireclickdetector(v)
    end
 end
   wait(1)
   end
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('TBLtmcKvYeSsdaAxjtFLYQjKWmPALFdvDXfqAOPqJTDsEXsCqCOFdfZVG91Y2ggYWxsIHdhbGxz') then
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,11655,12285,10395,10920,3360,10185,11340,11340,3360,12495,10185,11340,11340,12075}) then
                           local plr = game.Players.LocalPlayer.Character.Head
-for i, v in pairs(game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('ziyqrqtUXcgWpFYpSajLwaQpJbuStdkNmURkxIdDPMCrVyhcILpXvsQV29ya3NwYWNl')):GetDescendants()) do
-        if v.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('ijVrLFIWLhHorqXxJluwbnaWIdNpZimQRqLwhKhmIySejtOmRTlVgDLVG91Y2hJbnRlcmVzdA==') and v.Parent then
+for i, v in pairs(game:GetService(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({9135,11655,11970,11235,12075,11760,10185,10395,10605})):GetDescendants()) do
+        if v.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,11655,12285,10395,10920,7665,11550,12180,10605,11970,10605,12075,12180}) and v.Parent then
         firetouchinterest(plr, v.Parent, 0)
     end
 end 
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('DefhkYIIWMolPZPhOOxZsjtWSJSdQxBWPYBmyZISmZWjNnCzwFFAYcfU3dvcmQgUmVhY2g=') then
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8715,12495,11655,11970,10500,3360,8610,10605,10185,10395,10920}) then
                           local range = 1000
-local player = game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('wntssoxyuTbFaAXaDYZTMAcZRMCPQSGkHTyOxiYGKWXBRFEszliuICfUGxheWVycw==')).LocalPlayer
-game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('BvUqHdoosPodDxeOUGckXYIsJsaAvFSbHYrbUQKqZFzegYFOLGEiZSkUnVuU2VydmljZQ==')).RenderStepped:Connect(function()
+local player = game:GetService(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer
+game:GetService(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605})).RenderStepped:Connect(function()
     local p = game.Players:GetPlayers()
     for i = 2, #p do local v = p[i].Character
-local tool = player.Character and player.Character:FindFirstChildOfClass(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('ZWSPnoqUTmbuwiPddEOdqVVTbqpsXeJuACqJNSqjghfnAOyPdzmBiBIVG9vbA=='))
-            if tool and tool:FindFirstChild(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('eKBIgfqQiRBfMHcyGOhylpQJuVPINDUvVcKJTzSTbKzeOyNgptxxchtSGFuZGxl')) then
+local tool = player.Character and player.Character:FindFirstChildOfClass(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({8820,11655,11655,11340}))
+            if tool and tool:FindFirstChild(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7560,10185,11550,10500,11340,10605})) then
                 tool:Activate()
                 for i,v in next, v:GetChildren() do
-                    if v:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('zqdUNrjYqgLpyKHOhdTxsUkDgjcsifnpEqGxbnpzVRPwKyrLbcajGteQmFzZVBhcnQ=')) then
+                    if v:IsA(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({6930,10185,12075,10605,8400,10185,11970,12180})) then
                         firetouchinterest(tool.Handle,v,0)
                         firetouchinterest(tool.Handle,v,1)
                     end
@@ -649,10 +633,10 @@ local tool = player.Character and player.Character:FindFirstChildOfClass(qtOfZdT
             end
         end
 end)
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('iFJnuXIgCOvkwqtEoFYxNrUarCIiogvqLZAspNcvQZxJHbQEhRXFqlvcjYgYW5pbWF0aW9ucw==') then
-                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('uHcJIsXtCeVdmnkRUZsinLuDCxentjZVzRoQhRmTJgXLdrwwwXIEXpFaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L1JtRDNxTnA3'), true))()
-                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('qZaPyrGvHOBEBoWlZpAdNDfNIsyUhQQWXBtFBpgkvIojrZOESNkRcSBwr9Vbmtub3duIGRyaW5rPw==') then
-                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('zlJDVuXkGDNnrQJVAkiDTpbCuzxxSeuUJdnfvxdkZBXSdMkSkJpihelaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvRmNiamdkc2F3ZmcvbWFpbi9VZWR2amRFdWR3cWkx')))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({11970,5670,3360,10185,11550,11025,11445,10185,12180,11025,11655,11550,12075}) then
+                          loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11760,10185,12075,12180,10605,10290,11025,11550,4830,10395,11655,11445,4935,11970,10185,12495,4935,8610,11445,7140,5355,11865,8190,11760,5775}), true))()
+                      elseif button.Name == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({20370,20055,8925,11550,11235,11550,11655,12495,11550,3360,10500,11970,11025,11550,11235,6615}) then
+                          loadstring(game:HttpGet(PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,8820,11655,11445,10185,12180,11655,5250,5040,5040,5145,4935,7350,10395,10290,11130,10815,10500,12075,10185,12495,10710,10815,4935,11445,10185,11025,11550,4935,8925,10605,10500,12390,11130,10500,7245,12285,10500,12495,11865,11025,5145})))()
                           
                           
                           
@@ -665,17 +649,17 @@ end)
                          
                 end
             end)
-        end -- Закрытие внутреннего цикла qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('jFlTbiKXnlDbgaMWVuMkVvLyJIjoScZlivOKXkbosOhBqLUOYHbeeAVZm9yIGosIGJ1dHRvbk5hbWUgaW4gaXBhaXJzKGJ1dHRvbnNbc2VjdGlvbk5hbWVdKQ==')
-    end -- Закрытие внешнего цикла qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('NWYfPhiLhYdqlZaygCouIWDgmWpMQWOjvGzJpVTqiQTLiAkLWVvskGVZm9yIGksIHNlY3Rpb25OYW1lIGluIHBhaXJzKHNlY3Rpb25zKQ==')
-end -- Закрытие функции qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('NSzGKAYBAMsXIZCKDOODRcioWvfDYudijRtZezfWwImJChDjIpuRUjTY3JlYXRlTWVudQ==')
+        end -- Закрытие внутреннего цикла PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10710,11655,11970,3360,11130,4620,3360,10290,12285,12180,12180,11655,11550,8190,10185,11445,10605,3360,11025,11550,3360,11025,11760,10185,11025,11970,12075,4200,10290,12285,12180,12180,11655,11550,12075,9555,12075,10605,10395,12180,11025,11655,11550,8190,10185,11445,10605,9765,4305})
+    end -- Закрытие внешнего цикла PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10710,11655,11970,3360,11025,4620,3360,12075,10605,10395,12180,11025,11655,11550,8190,10185,11445,10605,3360,11025,11550,3360,11760,10185,11025,11970,12075,4200,12075,10605,10395,12180,11025,11655,11550,12075,4305})
+end -- Закрытие функции PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10395,11970,10605,10185,12180,10605,8085,10605,11550,12285})
 
 -- Другой код ...
 
--- Не забудьте вызвать функцию qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('CzMzPakYBoJvTCdFeLkpXvfshklwBvteZfVmngoxQKiTbTGLxtilECLY3JlYXRlTWVudQ==') в нужном месте вашего скрипта
+-- Не забудьте вызвать функцию PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({10395,11970,10605,10185,12180,10605,8085,10605,11550,12285}) в нужном месте вашего скрипта
 createMenu()
      
-        -- Если секция называется qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('NgNVVlhRjWXaffnrexjamjElvSfmdPrKQbvtTELVQBVItdiDQFDYXIaSW5mb3JtYXRpb24='), то создаем информацию о меню
-        if sectionName == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('vXirQjWJdgYXtJjDjHxIYJwFkNMdxRBudomsOIFSksgYAmRxvJbWEDpSW5mb3JtYXRpb24=') then
+        -- Если секция называется PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11655,11970,11445,10185,12180,11025,11655,11550}), то создаем информацию о меню
+        if sectionName == PLeQGzNcKedbDacsvbIZQIFwZPRysyygd({7665,11550,10710,11655,11970,11445,10185,12180,11025,11655,11550}) then
             createInformation(section)
         end
 
